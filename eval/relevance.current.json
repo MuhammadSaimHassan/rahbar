@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "hash_mode": "utf8-lf",
+  "golden_sha256": "52f56ffdd8437b32f59487a0aaea488a1fb184633890f9e22389c2cfac115e26",
+  "chunks_sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845",
+  "method": "source-page-and-anchor; no ranked retrieval",
+  "questions": {
+    "o01": [
+      {
+        "source": "academic-rules-handbook-jun-2026.pdf",
+        "section": "5.4",
+        "pages": [
+          24,
+          25
+        ],
+        "chunk_ids": [
+          "40070b386a49f1180e93e8f8a23ee7cd",
+          "ce82ff8a7ad460e2144814a755d0fae2"
+        ]
+      }
+    ],
+    "o02": [
+      {
+        "source": "academic-rules-handbook-jun-2026.pdf",
+        "section": "1.22",
+        "pages": [
+          10,
+          11
+        ],
+        "chunk_ids": [
+          "515d0d34cb4540dfa8ae14905595c84a",
+          "bcaba336caaf8354c4f11499d014c607"
+        ]
+      }
+    ],
+    "o03": [
+      {
+        "source": "academic-rules-handbook-jun-2026.pdf",
+        "section": "1.20",
+        "pages": [
+          8,
+          9
+        ],
+        "chunk_ids": [
+          "1e282d3032b66ba0ec615766101d7449",
+          "b4d32ffc97ddae655276eb6a024a6d58"
+        ]
+      }
+    ],
+    "o04": [
+      {
+        "source": "academic-rules-handbook-jun-2026.pdf",
+        "section": "2.7",
+        "pages": [
+          13
+        ],
+        "chunk_ids": [
+          "a47195da8526124d422d2d9a688fd4cf"
+        ]
+      }
+    ],
+    "o05": [
+      {
+        "source": "academic-rules-handbook-jun-2026.pdf",
+        "section": "4.7",
+        "pages": [
+          20
+        ],
+        "chunk_ids": [
+          "02f98557c4d97197191f47010ebbf9c0"
+        ]
+      }
+    ],
+    "o06": [
+      {
+        "source": "academic-rules-handbook-jun-2026.pdf",
+        "section": "1.23",
+        "pages": [
+          10,
+          11
+        ],
+        "chunk_ids": [
+          "1baf8a5add9ffdf7c2725c5cc01de00c",
+          "737510767db8812076c6d9b3ea0a2a1b"
+        ]
+      }
+    ],
+    "o07": [
+      {
+        "source": "student-handbook-jun-2026.pdf",
+        "section": "Harassment",
+        "pages": [
+          14,
+          15
+        ],
+        "chunk_ids": [
+          "7f6c2e419276440a4f67a8359de7e2cb",
+          "a3233c51d01b0402b23e5e297b3c0e12"
+        ]
+      }
+    ],
+    "o08": [
+      {
+        "source": "faculty-entrepreneurship-and-technical-start-ups-policy.pdf",
+        "section": "4.2",
+        "pages": [
+          1
+        ],
+        "chunk_ids": [
+          "ab761b84327ea1e522c4d0075cd25414"
+        ]
+      }
+    ],
+    "o09": [
+      {
+        "source": "faculty-entrepreneurship-and-technical-start-ups-policy.pdf",
+        "section": "4.3",
+        "pages": [
+          1
+        ],
+        "chunk_ids": [
+          "ab761b84327ea1e522c4d0075cd25414"
+        ]
+      }
+    ],
+    "o10": [
+      {
+        "source": "fee-structure-page.html",
+        "section": "Fee Refund Policy",
+        "pages": [
+          1
+        ],
+        "chunk_ids": [
+          "958bfd6466c05dca619fb192f843e0c7"
+        ]
+      }
+    ],
+    "v01": [
+      {
+        "source": "undergraduate-academic-rules-aug-2023.pdf",
+        "section": "6.4(iii)",
+        "pages": [
+          20
+        ],
+        "chunk_ids": [
+          "3acd473c1cc02df4c0b8710760d56605"
+        ]
+      }
+    ],
+    "v02": [
+      {
+        "source": "academic-rules-handbook-jun-2026.pdf",
+        "section": "6.2",
+        "pages": [
+          28,
+          29
+        ],
+        "chunk_ids": [
+          "6ae7fdd592fe852626b001507dec81ea",
+          "aaf729a39ef550e1606a79056b8a6a16"
+        ]
+      }
+    ],
+    "v03": [
+      {
+        "source": "undergraduate-academic-rules-aug-2023.pdf",
+        "section": "4.3",
+        "pages": [
+          14
+        ],
+        "chunk_ids": [
+          "247686f051942e88184fafe18355a26d"
+        ]
+      }
+    ],
+    "v04": [
+      {
+        "source": "academic-rules-handbook-jun-2026.pdf",
+        "section": "4.3",
+        "pages": [
+          19
+        ],
+        "chunk_ids": [
+          "795b6766e3dbd7011d9a61a0a79a65e1"
+        ]
+      }
+    ],
+    "e01": [
+      {
+        "source": "academic-rules-handbook-jun-2026.pdf",
+        "section": "1.21",
+        "pages": [
+          10,
+          11
+        ],
+        "chunk_ids": [
+          "8e062ecba1fa4a30388827b2f6770fd9"
+        ]
+      }
+    ],
+    "e02": [
+      {
+        "source": "academic-rules-handbook-jun-2026.pdf",
+        "section": "2.3",
+        "pages": [
+          12,
+          13
+        ],
+        "chunk_ids": [
+          "08b9798e867ab155d7b5f19979b09552",
+          "9c6b098e45f34a2b19c1ede1e4f1189c"
+        ]
+      }
+    ],
+    "e03": [
+      {
+        "source": "fee-structure-page.html",
+        "section": "Tuition Fee",
+        "pages": [
+          1
+        ],
+        "chunk_ids": [
+          "ce175b5454623eb8e1a969f315bf58f0"
+        ]
+      }
+    ],
+    "a01": [],
+    "a02": [],
+    "i01": [
+      {
+        "source": "academic-rules-handbook-jun-2026.pdf",
+        "section": "1.20",
+        "pages": [
+          8,
+          9
+        ],
+        "chunk_ids": [
+          "1e282d3032b66ba0ec615766101d7449",
+          "b4d32ffc97ddae655276eb6a024a6d58"
+        ]
+      }
+    ]
+  },
+  "unmapped": []
+}

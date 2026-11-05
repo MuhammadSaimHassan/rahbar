@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "hash_mode": "utf8-lf",
+  "frozen_on_pkt": "2026-11-05",
+  "method": "source-authored before tuning; projection uses no ranked retrieval",
+  "team_review": "pending",
+  "git_commit": "pending",
+  "sha256": {
+    "golden": "52f56ffdd8437b32f59487a0aaea488a1fb184633890f9e22389c2cfac115e26",
+    "cache_tests": "f79bfa23de570e3df2519352216ab6a4456da7c8f2388976306e97caca47217d",
+    "manifest": "248ac9524a04161033719072de7a1aa2ff4d20d37ce48395242ba973953af688",
+    "projection": "db315eb2f6ecc160dc1697f160189d73b47108ad81f3a7d29356bce9c696d4ff"
+  },
+  "chunks_sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845",
+  "question_types": {
+    "ordinary": 10,
+    "version": 4,
+    "exact": 3,
+    "abstain": 2,
+    "injection": 1
+  },
+  "cache_pairs": {
+    "hit": 6,
+    "miss": 6
+  },
+  "cache_policy_cases": 3
+}
