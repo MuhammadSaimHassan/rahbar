@@ -1,0 +1,322 @@
+{
+  "chunk_cases": {
+    "400-50": {
+      "recall@3": 0.7777777777777778,
+      "recall@5": 0.8888888888888888,
+      "collection": "rahbar-eval-400",
+      "generation": "ef47e96454d54d7bbdcc971486676393",
+      "chunks_sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845",
+      "by_type": {
+        "abstain": {
+          "recall@3": null,
+          "recall@5": null
+        },
+        "exact": {
+          "recall@3": 1.0,
+          "recall@5": 1.0
+        },
+        "injection": {
+          "recall@3": 1.0,
+          "recall@5": 1.0
+        },
+        "ordinary": {
+          "recall@3": 0.9,
+          "recall@5": 0.9
+        },
+        "version": {
+          "recall@3": 0.25,
+          "recall@5": 0.75
+        }
+      },
+      "per_question": [
+        {
+          "id": "o01",
+          "type": "ordinary",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.85618126,
+          "best_relevant_score": 0.85618126
+        },
+        {
+          "id": "o02",
+          "type": "ordinary",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.81129938,
+          "best_relevant_score": 0.81129938
+        },
+        {
+          "id": "o03",
+          "type": "ordinary",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.7570855,
+          "best_relevant_score": 0.7570855
+        },
+        {
+          "id": "o04",
+          "type": "ordinary",
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "best_score": 0.8235395,
+          "best_relevant_score": null
+        },
+        {
+          "id": "o05",
+          "type": "ordinary",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.83975399,
+          "best_relevant_score": 0.83975399
+        },
+        {
+          "id": "o06",
+          "type": "ordinary",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.8410649299999999,
+          "best_relevant_score": 0.8410649299999999
+        },
+        {
+          "id": "o07",
+          "type": "ordinary",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.70734644,
+          "best_relevant_score": 0.70734644
+        },
+        {
+          "id": "o08",
+          "type": "ordinary",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.81836212,
+          "best_relevant_score": 0.81836212
+        },
+        {
+          "id": "o09",
+          "type": "ordinary",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.7696427100000001,
+          "best_relevant_score": 0.7696427100000001
+        },
+        {
+          "id": "o10",
+          "type": "ordinary",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.78849757,
+          "best_relevant_score": 0.78849757
+        },
+        {
+          "id": "v01",
+          "type": "version",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.76403463,
+          "best_relevant_score": 0.76403463
+        },
+        {
+          "id": "v02",
+          "type": "version",
+          "recall@3": 0.0,
+          "recall@5": 1.0,
+          "best_score": 0.77068138,
+          "best_relevant_score": 0.74059469
+        },
+        {
+          "id": "v03",
+          "type": "version",
+          "recall@3": 0.0,
+          "recall@5": 1.0,
+          "best_score": 0.80397075,
+          "best_relevant_score": 0.7459724999999999
+        },
+        {
+          "id": "v04",
+          "type": "version",
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "best_score": 0.77173543,
+          "best_relevant_score": null
+        },
+        {
+          "id": "e01",
+          "type": "exact",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.7738322,
+          "best_relevant_score": 0.7738322
+        },
+        {
+          "id": "e02",
+          "type": "exact",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.74353075,
+          "best_relevant_score": 0.74353075
+        },
+        {
+          "id": "e03",
+          "type": "exact",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.80380666,
+          "best_relevant_score": 0.80380666
+        },
+        {
+          "id": "a01",
+          "type": "abstain",
+          "recall@3": null,
+          "recall@5": null,
+          "best_score": 0.69722778,
+          "best_relevant_score": null
+        },
+        {
+          "id": "a02",
+          "type": "abstain",
+          "recall@3": null,
+          "recall@5": null,
+          "best_score": 0.6785469,
+          "best_relevant_score": null
+        },
+        {
+          "id": "i01",
+          "type": "injection",
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "best_score": 0.79747558,
+          "best_relevant_score": 0.79747558
+        }
+      ]
+    }
+  },
+  "cache_sweep": {
+    "collection": "rahbar-eval-400",
+    "generation": "ef47e96454d54d7bbdcc971486676393",
+    "assumes_seed_answer_passed_validation": true,
+    "relevance_floor": 0.7,
+    "pairs": [
+      {
+        "id": "c01",
+        "expected_hit": true,
+        "reason": "Same threshold and policy scope, phrased differently.",
+        "cosine": 0.9338476382005441,
+        "guard_match": false
+      },
+      {
+        "id": "c02",
+        "expected_hit": true,
+        "reason": "Same registration condition and edition.",
+        "cosine": 0.9289213251552343,
+        "guard_match": false
+      },
+      {
+        "id": "c03",
+        "expected_hit": true,
+        "reason": "Same latest-attempt rule, including the lower-grade condition.",
+        "cosine": 0.9172905508184158,
+        "guard_match": false
+      },
+      {
+        "id": "c04",
+        "expected_hit": true,
+        "reason": "Same theory/lab outcome and edition.",
+        "cosine": 0.9221010585104312,
+        "guard_match": false
+      },
+      {
+        "id": "c05",
+        "expected_hit": true,
+        "reason": "Same licensing period, not the employment-duration requirement.",
+        "cosine": 0.949884219106282,
+        "guard_match": false
+      },
+      {
+        "id": "c06",
+        "expected_hit": true,
+        "reason": "Same programme category, fee unit and snapshot.",
+        "cosine": 0.9574273389654153,
+        "guard_match": true
+      },
+      {
+        "id": "c07",
+        "expected_hit": false,
+        "reason": "Graduation and academic warning are different conditions even though both use 2.00; their evidence and answer wording differ.",
+        "cosine": 0.8417725052574054,
+        "guard_match": false
+      },
+      {
+        "id": "c08",
+        "expected_hit": false,
+        "reason": "Reversing which component was passed changes the answer to lab only.",
+        "cosine": 0.9596969949402291,
+        "guard_match": false
+      },
+      {
+        "id": "c09",
+        "expected_hit": false,
+        "reason": "More than one year of employment is not the two-year free licensing period.",
+        "cosine": 0.7668336944199572,
+        "guard_match": false
+      },
+      {
+        "id": "c10",
+        "expected_hit": false,
+        "reason": "The policy editions give opposite answers about new summer electives.",
+        "cosine": 0.9198026619733494,
+        "guard_match": false
+      },
+      {
+        "id": "c11",
+        "expected_hit": false,
+        "reason": "The regular-semester extra-course rule changed between these editions.",
+        "cosine": 0.7700737341316399,
+        "guard_match": false
+      },
+      {
+        "id": "c12",
+        "expected_hit": false,
+        "reason": "Admission fee and security deposit have different refund rules.",
+        "cosine": 0.7883729728787819,
+        "guard_match": false
+      }
+    ],
+    "thresholds": [
+      {
+        "threshold": 0.85,
+        "raw_false_hits": [
+          "c08",
+          "c10"
+        ],
+        "false_hits": [],
+        "true_hits": [
+          "c06"
+        ]
+      },
+      {
+        "threshold": 0.9,
+        "raw_false_hits": [
+          "c08",
+          "c10"
+        ],
+        "false_hits": [],
+        "true_hits": [
+          "c06"
+        ]
+      },
+      {
+        "threshold": 0.95,
+        "raw_false_hits": [
+          "c08"
+        ],
+        "false_hits": [],
+        "true_hits": [
+          "c06"
+        ]
+      }
+    ],
+    "lowest_zero_false_hit_threshold": 0.85
+  }
+}

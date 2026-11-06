@@ -4,7 +4,7 @@
   "frozen_on_pkt": "2026-11-05",
   "method": "source-authored before tuning; projection uses no ranked retrieval",
   "team_review": "pending",
-  "git_commit": "pending",
+  "git_commit": "cccf3d16810999332a17e32be365def4e18ce477",
   "sha256": {
     "golden": "52f56ffdd8437b32f59487a0aaea488a1fb184633890f9e22389c2cfac115e26",
     "cache_tests": "f79bfa23de570e3df2519352216ab6a4456da7c8f2388976306e97caca47217d",
