@@ -47,7 +47,9 @@ and API through Ingress. That deployment uses the fictional fixture overlay.
 
 ## Independent feature pull requests
 
-Create each feature branch from the latest dev and open its PR against dev. The same
+After this main-targeted CI change is merged, synchronize main into dev through a
+reviewed PR so dev and branches created from it include the updated workflow. Then
+create each feature branch from the latest dev and open its PR against dev. The same
 six CI jobs run before integration, while a subsequent push to dev validates the
 combined result. Wait for green checks and a partner review before merging. Main's
 existing protection remains in force for release PRs; this workflow change does not
