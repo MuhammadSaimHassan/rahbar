@@ -26,6 +26,9 @@ measurements. Current acceptance gaps are listed in ../SUBMISSION.md.
 | [submission-audit.txt](submission-audit.txt), [source snapshot audit](phase8-source-snapshot-audit.txt), [phase8-validation.json](phase8-validation.json) | Current Phase 8 documentation and audit checks | Includes unresolved items; inspect detailed scope |
 
 The historical real-model answers and manual-review facts are in ../../eval/results.json
-and ../../eval/baseline.json. They predate the final prompt change. No branch-protection,
-blocked/green merge screenshots, hosted CD success or Docker Hub SHA evidence has been
-created; those items remain outstanding.
+and ../../eval/baseline.json. They predate the final prompt change.
+
+Hosted evidence: [hosted-release.md](hosted-release.md) records the successful CD run,
+the three Docker Hub SHA tags and the PR #2 blocked/green gate, with screenshots
+[eval-gate-blocked.png](eval-gate-blocked.png) and [eval-gate-green.png](eval-gate-green.png).
+The branch-protection screenshot is still outstanding.
