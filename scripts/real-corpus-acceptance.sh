@@ -139,7 +139,29 @@ kubectl --context "$profile" -n rahbar exec deployment/api -- python -c \
 ) > "$report/indexer-memory-samples.txt" 2>&1 &
 monitor_pid=$!
 kubectl --context "$profile" -n rahbar patch job indexer --type=merge -p '{"spec":{"suspend":false}}'
-kubectl --context "$profile" -n rahbar wait --for=condition=complete job/indexer --timeout=7200s
+# Fail immediately on a failed Job instead of waiting two hours for Complete.
+python - "$profile" <<'PYWAIT'
+import json
+import subprocess
+import sys
+import time
+context = sys.argv[1]
+deadline = time.monotonic() + 7200
+while time.monotonic() < deadline:
+    result = subprocess.run(['kubectl', '--context', context, '-n', 'rahbar',
+                             'get', 'job', 'indexer', '-o', 'json'],
+                            check=True, capture_output=True, text=True, timeout=30)
+    job = json.loads(result.stdout)
+    conditions = {c['type']: c for c in job.get('status', {}).get('conditions', [])
+                  if c.get('status') == 'True'}
+    if 'Complete' in conditions:
+        break
+    if 'Failed' in conditions or 'FailureTarget' in conditions:
+        raise SystemExit('Production indexer Job failed: ' + str(conditions))
+    time.sleep(5)
+else:
+    raise SystemExit('Production indexing exceeded its two-hour deadline')
+PYWAIT
 kill "$monitor_pid" 2>/dev/null || true
 wait "$monitor_pid" 2>/dev/null || true
 monitor_pid=""

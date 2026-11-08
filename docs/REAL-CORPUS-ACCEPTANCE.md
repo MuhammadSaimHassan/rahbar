@@ -49,3 +49,14 @@ the run/source commit when committing the reviewed summary. Retain failures hone
 Run the client directly only against an explicitly named ephemeral rahbar-real-*
 context; the orchestration shell refuses non-GitHub-hosted environments to protect
 unrelated local projects.
+
+
+## First hosted run and correction
+
+Run 42496893362 verified downloads and started the real cluster but failed before
+indexing: the outer real overlays had omitted namespace: rahbar, creating their added
+inference policies in default. Both overlays now set the namespace, CI validates both
+real renders, and a regression checks every rendered namespaced resource. The failed
+run is retained in evidence/real-corpus-first-failure.json; it is not a passing run.
+The runner also detects Failed/FailureTarget Job conditions promptly, rather than
+waiting for a completion condition that a failed Job cannot reach.
