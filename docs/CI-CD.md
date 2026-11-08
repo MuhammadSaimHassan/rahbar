@@ -2,7 +2,7 @@
 
 ## Checks and deployment
 
-CI runs on pull requests to `main` and pushes to `dev`. It checks Python
+CI runs on pull requests to `main` or `dev`, and pushes to `dev`. It checks Python
 lint and types, enforces 60% API coverage, validates the production and CI
 manifests with kubeconform, and builds all three application images. The
 images are passed to the Trivy and fixture jobs as a short-lived artifact.
@@ -43,3 +43,22 @@ and API through Ingress. That deployment uses the fictional fixture overlay.
 5. Save the two screenshots and the successful CD run link in
    `docs/evidence/`. Check that Docker Hub shows all three tags for the
    SHA from that run.
+
+
+## Independent feature pull requests
+
+After this main-targeted CI change is merged, synchronize main into dev through a
+reviewed PR so dev and branches created from it include the updated workflow. Then
+create each feature branch from the latest dev and open its PR against dev. The same
+six CI jobs run before integration, while a subsequent push to dev validates the
+combined result. Wait for green checks and a partner review before merging. Main's
+existing protection remains in force for release PRs; this workflow change does not
+itself add a protection rule to dev.
+
+Independent PRs can stay open while waiting for review. Keep their file ownership
+separate; after one merges, bring current target-branch changes into the next PR and
+rerun CI when its tested contents change. A PR that depends on another PR must wait
+for that prerequisite or explicitly use a stacked branch arrangement.
+
+CD still runs only on a push to main. Feature PR checks build and scan images but do
+not publish them or deploy a persistent real-corpus service.

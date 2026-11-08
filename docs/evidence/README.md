@@ -26,6 +26,26 @@ measurements. Current acceptance gaps are listed in ../SUBMISSION.md.
 | [submission-audit.txt](submission-audit.txt), [source snapshot audit](phase8-source-snapshot-audit.txt), [phase8-validation.json](phase8-validation.json) | Current Phase 8 documentation and audit checks | Includes unresolved items; inspect detailed scope |
 
 The historical real-model answers and manual-review facts are in ../../eval/results.json
-and ../../eval/baseline.json. They predate the final prompt change. No branch-protection,
-blocked/green merge screenshots, hosted CD success or Docker Hub SHA evidence has been
-created; those items remain outstanding.
+and ../../eval/baseline.json. They predate the final prompt change.
+
+Hosted evidence: [hosted-release.md](hosted-release.md) records the successful CD run,
+the three Docker Hub SHA tags and the PR #2 blocked/green gate, with screenshots
+[eval-gate-blocked.png](eval-gate-blocked.png) and [eval-gate-green.png](eval-gate-green.png).
+The active main ruleset was independently read through GitHub's API:
+[branch-protection-api.json](branch-protection-api.json) records its target, one
+approval, all six required check names and empty bypass list. This is configuration
+verification, not a UI screenshot; an expanded screenshot remains outstanding.
+
+The second hosted CD run 42476095435 also completed successfully for
+622ff386867e35f118b477b8cc645d68d37928fb. See hosted-release.md for matching tags.
+PR #2 is an unmerged draft. Current remaining work is listed in ../SUBMISSION.md.
+
+
+Owner documentation validation on 2026-11-08:
+[owner-validation.json](owner-validation.json) records the scope and unchanged checker
+summary. Gitleaks v8.30.1 found zero findings in all-ref history (ten commits) and
+pending source: [history report](gitleaks-history.json),
+[working-tree report](gitleaks-working-tree.json). The official release checksum was
+verified before running the scanner. The original checker output is retained in
+[owner-submission-audit.txt](owner-submission-audit.txt). These checks do not replace
+the pending real-corpus acceptance or expanded browser screenshot.

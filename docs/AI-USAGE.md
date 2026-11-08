@@ -23,3 +23,10 @@ Raw source documents were fetched from public institutional URLs, not generated 
 an AI model. Their exact URLs/hashes are in corpus/MANIFEST.md. Public source text
 may be sent to a configured hosted provider only when that deployment mode is enabled;
 see ADR 0004 for the question/evidence data boundary.
+
+
+On 2026-11-08, Codex assisted Saim with reading the partner handoff, verifying hosted
+CD/PR state and main protection through GitHub's API, and updating the submission and
+evidence documentation. The commit uses Saim's configured Git identity at his request;
+AI assistance remains disclosed here. The API evidence is not represented as a browser
+screenshot. No personal debugging account or unperformed real-model run was invented.
