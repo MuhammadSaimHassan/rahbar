@@ -41,12 +41,18 @@ spec:
                   key: LLM_API_KEY
                   optional: true
           resources:
-            requests: {cpu: 100m, memory: 128Mi}
-            limits: {cpu: "1", memory: 384Mi}
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: "1"
+              memory: 384Mi
           securityContext:
             allowPrivilegeEscalation: false
             readOnlyRootFilesystem: true
-            capabilities: {drop: [ALL]}
+            capabilities:
+              drop:
+                - ALL
           startupProbe:
             httpGet: {path: /healthz, port: http}
             periodSeconds: 2

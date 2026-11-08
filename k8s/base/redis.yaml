@@ -5,7 +5,8 @@ metadata:
 spec:
   accessModes: [ReadWriteOnce]
   resources:
-    requests: {storage: 1Gi}
+    requests:
+      storage: 1Gi
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -38,12 +39,18 @@ spec:
           ports:
             - {name: redis, containerPort: 6379}
           resources:
-            requests: {cpu: 50m, memory: 64Mi}
-            limits: {cpu: 500m, memory: 192Mi}
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              cpu: 500m
+              memory: 192Mi
           securityContext:
             allowPrivilegeEscalation: false
             readOnlyRootFilesystem: true
-            capabilities: {drop: [ALL]}
+            capabilities:
+              drop:
+                - ALL
           startupProbe:
             exec: {command: [redis-cli, ping]}
             periodSeconds: 2

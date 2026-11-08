@@ -76,7 +76,7 @@ correct identity and retain AI disclosure.
 
 Latest documentation audit: 147 passed · 9 warnings · 13 failures. This is an unchanged-checker observation, not a real deployment acceptance result.
 
-## Real acceptance update � PR #7, 2026-11-08
+## Real acceptance update — PR #7, 2026-11-08
 
 PR #6 synchronized main into dev. PR #7 adds hosted real acceptance and corrects
 the real overlays' missing namespace. Run 42498284513 passed with fresh verified
