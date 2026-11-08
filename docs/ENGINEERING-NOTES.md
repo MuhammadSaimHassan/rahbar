@@ -68,7 +68,9 @@ The Python parent's `ru_maxrss` was separately **195,276,800 bytes (186.23 MiB)*
 The cgroup value accounts for the container's processes, rather than treating the
 parent RSS as the entire OCR pipeline. A shell wrapper read the cgroup peak after
 the real writer completed, before its container exited. Timestamped metrics-server
-samples are saved in `docs/evidence/real-indexer-memory-samples.txt`; sampling can
+samples from `kubectl top pods -l job-name=indexer --containers` are saved in
+`docs/evidence/real-indexer-memory-samples.txt`. Their highest observed memory was
+151 MiB; sampling can
 miss a transient peak, so it does not replace the cgroup high-water mark.
 
 Relative to the 1,024 MiB limit, this run used **18.40%**, leaving **835.57 MiB
@@ -81,7 +83,8 @@ whole-container calculation. Exact output is in `docs/evidence/real-corpus-accep
 
 ## 5. Where recall@5 is worst
 
-The historical real-corpus baseline (`eval/baseline.json`, `by_type`) reports:
+The fresh revised-prompt run (`eval/results.json`, `by_type`, run 42499897552)
+reproduces the historical baseline retrieval figures:
 
 | Question type | Questions | Recall@5 |
 | --- | ---: | ---: |
@@ -100,6 +103,16 @@ by metadata filtering and reranking, is the next retrieval improvement to evalua
 It is not implemented. Exact-term questions happen to score best on this small sample;
 the assignment's expected general weakness is not a reason to report different data.
 
+The fresh run passed structural gates but answered only 6/18 answerable questions:
+five covered the reference facts, one lab/theory conditional answer was incorrect,
+and twelve returned fallback. All four version-sensitive and all three exact-term
+questions fell back despite the retrieval figures above. Hence retrieval recall,
+valid emitted citations and actual answer coverage are separate measurements. The
+injection question was answered correctly without following the injected command.
+No overall improvement over the earlier five complete answers is claimed. See
+REAL-MODEL-EVALUATION.md and the AI-assisted per-question semantic review; team
+review remains required.
+
 ## 6. Change EMBED_MODEL and restart only the API
 
 `api/app/services/health.py:59` compares collection model/dimension to the API pin;
@@ -112,6 +125,16 @@ The controlled fixture experiment returned five hits normally, rejected the chan
 pin with `Index metadata does not match the active catalog and embedding pin`, and
 returned five after restoration (`docs/evidence/failure-pin.json`). The earlier
 dependency smoke test separately recorded readiness 503 for a model mismatch.
+The fresh real run 42500255265 also created a disposable API Pod with a deliberately
+wrong EMBED_MODEL, while leaving the shared ConfigMap/index unchanged. Its /healthz
+returned 200 and /readyz returned 503 with an explicit embedding_pin mismatch naming
+both models and the common 768 dimension. Redis, index catalog and nonempty Chroma
+checks remained ok. Its saved logs show the same mismatch. See
+`docs/evidence/real-runtime-first-core.json`. The probe was removed afterwards;
+this is an isolated reproduction of the API-only mismatch, not a coordinated model
+migration. That run passed these core checks but its later HPA metric check failed;
+do not describe the whole workflow as green.
+
 Without these checks, models with equal dimensions could silently rank vectors in
 incompatible spaces; unequal dimensions would normally produce a store error.
 To change models, build a matching index and coordinate the shared configuration;

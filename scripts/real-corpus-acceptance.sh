@@ -21,6 +21,8 @@ cleanup() {
   if [[ "$cluster_owned" == true ]]; then
     kubectl --context "$profile" -n rahbar get pods,svc,ingress,hpa,pvc -o wide > "$report/cluster-final.txt" 2>&1
     kubectl --context "$profile" -n rahbar describe pods > "$report/pod-diagnostics.txt" 2>&1
+    kubectl --context "$profile" -n rahbar describe hpa > "$report/hpa-diagnostics.txt" 2>&1
+    kubectl --context "$profile" -n kube-system logs -l component=kube-controller-manager --tail=150 > "$report/controller-diagnostics.txt" 2>&1
     kubectl --context "$profile" -n rahbar logs job/indexer > "$report/indexer.log" 2>&1
     kubectl --context "$profile" -n rahbar logs deployment/api --tail=150 > "$report/api.log" 2>&1
     minikube -p "$profile" delete > "$report/cluster-cleanup.txt" 2>&1

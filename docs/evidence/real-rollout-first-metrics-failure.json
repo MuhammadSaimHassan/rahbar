@@ -1,0 +1,2054 @@
+{
+  "context": "rahbar-real-42500255265-1",
+  "namespace": "rahbar",
+  "original_image": "rahbar-api:dev",
+  "alternate_image": "rahbar-api:acceptance-rollback",
+  "requests": [
+    {
+      "stage": "baseline",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.116
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.138
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.129
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.113
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.134
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.154
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.125
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.147
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.163
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.142
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.135
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.121
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.127
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.159
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.14
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.152
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.113
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.108
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.168
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.15
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.133
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.117
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.185
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.128
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.147
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.13
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.12
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.168
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.152
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.141
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.135
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.108
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.121
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.128
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.141
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.122
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.137
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.146
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.188
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.136
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.115
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.131
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.115
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.14
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.116
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.117
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.108
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.136
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.109
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.113
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.109
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.135
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.1
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.136
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.109
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.126
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.111
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.121
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.12
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.156
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.111
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.117
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.136
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.111
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.114
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.118
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.123
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.114
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.115
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.114
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.118
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.161
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.128
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.109
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.113
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.109
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.132
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.117
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.111
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.127
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.109
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.117
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.111
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.119
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.126
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.115
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.116
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.1
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.1
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.113
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.116
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.111
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.114
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.143
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.118
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.123
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.114
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.117
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.129
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.113
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.113
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.111
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.111
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.134
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.122
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.113
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.108
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.111
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.123
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.128
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.123
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.123
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.131
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.116
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.122
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.114
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.114
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.111
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.114
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.147
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.118
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.115
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.115
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.117
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.123
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.118
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.116
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.109
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.129
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.118
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.108
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.124
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.114
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.121
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.114
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.108
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.108
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.109
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.12
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.1
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.118
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.115
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.12
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.106
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.1
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.1
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.108
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.129
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.116
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.116
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.109
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.114
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.112
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.103
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.099
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.1
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.107
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.124
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.104
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.109
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.102
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.101
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.105
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.11
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 5.125
+    }
+  ],
+  "ready_endpoint_addresses": [
+    "10.244.128.135",
+    "10.244.128.137",
+    "10.244.128.142"
+  ],
+  "stage": "pod-replacement",
+  "rollout_image": "rahbar-api:acceptance-rollback",
+  "rollback_image": "rahbar-api:dev",
+  "deleted_pod_uid": "828847f8-d8ce-459c-a1ae-021d0bd3f3e6",
+  "replacement_ready_pods": [
+    "api-948594c5d-jffsg",
+    "api-948594c5d-kx2g4",
+    "api-948594c5d-zxj9h"
+  ],
+  "top_pods": "NAME                    CPU(cores)   MEMORY(bytes)   \napi-948594c5d-jffsg     57m          61Mi            \napi-948594c5d-kx2g4     62m          55Mi            \napi-948594c5d-zxj9h     57m          62Mi            \nchroma-0                19m          45Mi            \nredis-7b7bf7d99-tm42x   10m          4Mi             \nui-fcd4fdfdf-9vmc8      1m           2Mi             \n",
+  "hpa": "NAME   REFERENCE        TARGETS              MINPODS   MAXPODS   REPLICAS   AGE\napi    Deployment/api   cpu: <unknown>/70%   3         3         3          16m\n",
+  "error": "resource metrics did not become available after pod replacement",
+  "restore_errors": [],
+  "passed": false,
+  "verification": {
+    "run_url": "https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42500255265",
+    "source_head": "fb8dcdd",
+    "overall_workflow_passed": false
+  }
+}

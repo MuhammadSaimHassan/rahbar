@@ -143,7 +143,12 @@ def demo(args: argparse.Namespace) -> dict:
             raise RuntimeError("replacement pod did not become ready")
         report["deleted_pod_uid"] = victim["metadata"]["uid"]
         report["replacement_ready_pods"] = [p["metadata"]["name"] for p in ready]
-        deadline = time.monotonic() + 90
+        # Measure the restored autoscaler, not the temporary fixed-size test bounds.
+        for name, spec in hpa_specs:
+            cluster.run("patch", "hpa", name, "--type=merge", "-p", json.dumps({"spec": spec}))
+        report["hpa_specs_restored_before_metrics"] = True
+        # Fresh CPU samples can be excluded during the default five-minute startup window.
+        deadline = time.monotonic() + 360
         while time.monotonic() < deadline:
             try:
                 report["top_pods"] = cluster.run("top", "pods")
@@ -154,6 +159,8 @@ def demo(args: argparse.Namespace) -> dict:
                 pass  # Metrics-server may not have sampled the replacement yet.
             time.sleep(2)
         else:
+            report["hpa_details"] = cluster.run("get", "hpa", "-o", "json")
+            report["hpa_description"] = cluster.run("describe", "hpa")
             raise RuntimeError("resource metrics did not become available after pod replacement")
         report["operations_completed"] = True
     except (subprocess.SubprocessError, RuntimeError, ValueError, KeyError, httpx.HTTPError) as exc:
