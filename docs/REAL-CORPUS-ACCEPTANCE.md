@@ -65,3 +65,28 @@ The next run (42498011937) stopped during the host Ollama startup probe with a
 connection reset (curl 56), before cluster deployment. The probe now retries all
 transient startup errors within a bounded two-minute window. This is not a change
 to application inference timeouts or acceptance criteria.
+
+## Reviewed passing run — 2026-11-08
+
+[Run 42498284513](https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42498284513)
+passed on source head 9339fbd, tested merge checkout bee627163f591e438e8f9270abe279f5f0efae95.
+All six normal CI jobs also passed for that source. The committed result is
+[evidence/real-corpus-acceptance.json](evidence/real-corpus-acceptance.json).
+
+Fresh verified downloads reproduced all nine documents, 950 chunks and the frozen
+400/50 fingerprint. Ingress returned the genuine Ollama CGPA answer (2.00, current
+policy physical page 24) and correctly declined the absent shuttle timetable. Three
+ready Service endpoints were checked; replacement of a ready API Pod completed with
+27 successful sampled requests and zero sampled failures. Every replacement sample
+was a cache HIT after warming: this proves finite cached request continuity, not
+uncached inference capacity or a load-test SLA.
+
+The production Job completed under its unchanged 1 GiB limit. Its final cgroup peak
+was 197,578,752 bytes (188.43 MiB), separately from parent RSS 195,276,800 bytes. This
+is 18.40% of the limit with 835.57 MiB observed headroom in this one run, not a bound
+on larger corpora. Timestamped metrics-server samples and actual model digests are
+committed alongside the result. Raw diagnostic artifacts expire after seven days.
+
+Full 20-question evaluation, enforced denial/PVC/pin/re-index/rollout experiments,
+team review and final release audit remain separate. This branch targets dev; the
+result does not claim these changes are already released on main.

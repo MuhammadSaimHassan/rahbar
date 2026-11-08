@@ -30,3 +30,9 @@ CD/PR state and main protection through GitHub's API, and updating the submissio
 evidence documentation. The commit uses Saim's configured Git identity at his request;
 AI assistance remains disclosed here. The API evidence is not represented as a browser
 screenshot. No personal debugging account or unperformed real-model run was invented.
+
+Codex also authored the hosted real-corpus acceptance workflow/client and namespace
+regression tests, diagnosed the observed misplaced-policy and startup-probe failures,
+and reviewed the passing run 42498284513. Real model outputs and measured memory
+are saved as evidence; the finite cached traffic test is not a full golden benchmark.
+Commits use Saim's configured identity at his request, with AI assistance disclosed.
