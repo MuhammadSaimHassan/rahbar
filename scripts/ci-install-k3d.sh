@@ -7,7 +7,9 @@ trap 'rm -rf -- "$work"' EXIT
 cd "$work"
 curl --fail --silent --show-error --location "$base/k3d-linux-amd64" -o k3d-linux-amd64
 curl --fail --silent --show-error --location "$base/checksums.txt" -o checksums.txt
-grep -E ' [ *]?k3d-linux-amd64$' checksums.txt | sha256sum --check
+expected=$(awk '$2 == "_dist/k3d-linux-amd64" { print $1 }' checksums.txt)
+if [[ -z "$expected" ]]; then echo "k3d-linux-amd64 not listed in checksums.txt" >&2; exit 1; fi
+echo "$expected  k3d-linux-amd64" | sha256sum --check
 mkdir -p "$HOME/.local/bin"
 install -m 0755 k3d-linux-amd64 "$HOME/.local/bin/k3d"
 if [[ -n "${GITHUB_PATH:-}" ]]; then echo "$HOME/.local/bin" >> "$GITHUB_PATH"; fi
