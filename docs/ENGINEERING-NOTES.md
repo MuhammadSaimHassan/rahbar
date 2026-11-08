@@ -1,6 +1,6 @@
 # Engineering notes
 
-These answers describe the implementation and saved measurements as of 2026-11-07.
+These answers describe the implementation and saved measurements as of 2026-11-08.
 Line references refer to this working tree. AI assistance is disclosed in AI-USAGE.md.
 
 ## 1. Indexing in API startup: three replicas, one index
@@ -58,20 +58,26 @@ API pods alone should remain bounded by model throughput.
 ## 4. Indexer memory limit, observed memory and margin
 
 `k8s/base/indexer-job.yaml:30` requests 256 MiB; line 31 limits memory to 1 GiB.
-The CronJob uses the same settings at `k8s/base/reindex-cronjob.yaml:37`.
-The real-corpus preprocessing run measured approximately 159 MiB parent-process
-peak RSS with a warm OCR cache (`docs/evidence/indexer-validation.txt`). Subtracting
-this from 1,024 MiB gives 865 MiB nominal headroom, about 84.5% of the limit.
-This is not a measured whole-container safety margin: OCR/Poppler children,
-cold extraction, embedding buffers and runtime overhead were not all represented.
+The CronJob uses the same 1 GiB limit. The fresh production run
+[42498284513](https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42498284513)
+performed real OCR, extraction, embedding and publication of all 950 chunks from
+nine verified sources in a Kubernetes Job. It used the unchanged production limit.
 
-The saved operational `kubectl top pods` sample was taken after the short fixture
-Job completed, so it has no indexer row. Metrics-server samples can also miss a
-short-lived peak. A production indexer cgroup peak and timed `kubectl top pods`
-samples remain required; no Kubernetes indexer peak is invented here. Monitor during
-the Job, retain container memory metrics, and inspect termination state with
-`kubectl --context=rahbar -n rahbar describe pod <indexer-pod>`. Exceeding the cgroup
-limit normally yields `OOMKilled` and exit 137; retrying the same limit does not fix it.
+The Job's final cgroup `memory.peak` was **197,578,752 bytes (188.43 MiB)**.
+The Python parent's `ru_maxrss` was separately **195,276,800 bytes (186.23 MiB)**.
+The cgroup value accounts for the container's processes, rather than treating the
+parent RSS as the entire OCR pipeline. A shell wrapper read the cgroup peak after
+the real writer completed, before its container exited. Timestamped metrics-server
+samples are saved in `docs/evidence/real-indexer-memory-samples.txt`; sampling can
+miss a transient peak, so it does not replace the cgroup high-water mark.
+
+Relative to the 1,024 MiB limit, this run used **18.40%**, leaving **835.57 MiB
+(81.60%) observed headroom**. It completed without an OOM. This is one cold-corpus
+measurement, not a guarantee for larger documents, changed dependencies or parallel
+OCR. Exceeding the cgroup limit normally yields OOMKilled/exit 137; repeating the
+same workload with unchanged resources does not address that cause. The previous
+159 MiB warm-cache parent-only report remains historical and is superseded for this
+whole-container calculation. Exact output is in `docs/evidence/real-corpus-acceptance.json`.
 
 ## 5. Where recall@5 is worst
 
