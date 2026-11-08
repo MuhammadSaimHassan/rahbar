@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-08",
+  "scope": "Documentation and saved GitHub configuration/release evidence; no new real-corpus deployment or browser screenshot",
+  "base_commit": "622ff386867e35f118b477b8cc645d68d37928fb",
+  "original_checker_exit_code": 1,
+  "original_checker_summary": "147 passed \u00b7 9 warnings \u00b7 13 failures",
+  "local_markdown_links_checked": 33,
+  "broken_links": [],
+  "gitleaks": {
+    "version": "8.30.1",
+    "official_binary_checksum_verified": true,
+    "history_commits_scanned": 10,
+    "history_findings": 0,
+    "pending_tree_findings": 0,
+    "reports": [
+      "gitleaks-history.json",
+      "gitleaks-working-tree.json"
+    ]
+  },
+  "application_code_changed": false,
+  "remaining": [
+    "expanded branch-protection screenshot",
+    "suitable-machine real-corpus acceptance and benchmark",
+    "production memory/operational proof",
+    "truthful personal engineering account",
+    "partner PR approval"
+  ]
+}
