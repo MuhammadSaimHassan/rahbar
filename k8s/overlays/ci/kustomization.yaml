@@ -31,7 +31,7 @@ patches:
         value: http://fixture-model:11434
       - op: replace
         path: /data/RELEVANCE_FLOOR
-        value: "1.01"
+        value: "0.70"
       - op: replace
         path: /data/OCR_ENABLED
         value: "false"
