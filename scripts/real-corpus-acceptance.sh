@@ -181,3 +181,16 @@ if [[ "${REAL_EVALUATION:-false}" == true ]]; then
   python -u eval/run_eval.py --api "http://$ip" --host rahbar.local --timeout 300 \
     --out "$report/real-model-results.json" --checkpoint "$report/real-model-checkpoint.json"
 fi
+
+if [[ "${REAL_OPERATIONS:-false}" == true ]]; then
+  PYTHONPATH=. python -u scripts/check_real_operations.py --api "http://$ip" \
+    --context "$profile" --out "$report/real-runtime-operations.json"
+  # A distinct reference of the same source-built image exercises rollout mechanics.
+  docker tag rahbar-api:dev rahbar-api:acceptance-rollback
+  minikube -p "$profile" image load rahbar-api:acceptance-rollback
+  python -u scripts/operational_demo.py --context "$profile" --namespace rahbar \
+    --api "http://$ip" --host rahbar.local --question \
+    'What minimum CGPA avoids academic warning under the June 2026 rules?' \
+    --request-timeout 300 --image rahbar-api:acceptance-rollback \
+    --out "$report/real-rollout-rollback.json"
+fi
