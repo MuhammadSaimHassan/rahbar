@@ -1,72 +1,77 @@
-# Submission status — 2026-11-07
+# Submission status — 2026-11-08
 
-The Phase 8 documentation has been completed against the current working tree.
-The assignment is not yet submission-ready. This checklist separates written
-explanations from acceptance evidence that still requires a run or account setup.
+The complete implementation is on protected main via PR #1. PR #3 added hosted
+release and evaluation-gate evidence. Both recorded hosted CD runs passed, including
+the deployment job. Written documentation and hosted release evidence are substantially
+complete; the runtime checks and personal review below remain outstanding.
 
-## Completed documentation
+## Completed implementation, documentation and hosted delivery
 
-- README: preview, fresh real deployment apply order, corpus fetching, Ollama, Secret creation, endpoints and verification.
-- ARCHITECTURE: state ownership, Chroma StatefulSet/PVC, Redis, request/publication flow, scaling and security.
-- ADRs 0001–0004: independent Job, immutable publication, Redis versus a second Chroma cache collection, provider/data governance.
-- CORPUS and MANIFEST: public sources, hashes, versions, scans/tables and absent topic.
-- PIPELINE: OCR/cleaning/chunking, metadata/pin, token amplification, three measured chunk settings, cache sweep and honest model-quality review.
-- FAILURE-ANALYSIS: four independently measured changes with symptoms, diagnostics, remedies and measurement limits.
-- ENGINEERING-NOTES: seven code-specific answers with line references; missing memory/duration evidence identified explicitly.
-- AI-USAGE: substantial Codex authorship and subsequent corrections disclosed.
-- CI-CD, KUBERNETES and OPERATIONS: setup and operational runbooks; evidence/README links the saved observations.
-
-## Acceptance work remaining
-
-| Item | Status and required action |
+| Item | Verified status |
 | --- | --- |
-| Publish completed working tree | Many implementation/document files are currently uncommitted or untracked. Review and commit on a working branch, then publish through the agreed GitHub workflow. A clone of the current remote cannot be assumed to contain these files. |
-| GitHub protection and collaboration | Configure dev/main workflow, required PR checks and one approval; capture protection evidence. Existing local history is short and has one author; do not fabricate historical contributions or rewrite it to appear otherwise. |
-| Docker Hub and hosted CD | Configure DOCKERHUB_NAMESPACE variable plus DOCKERHUB_USERNAME and DOCKERHUB_TOKEN secrets. **Done:** CD run 42474907543 passed and all three images carry the SHA tag; see evidence/hosted-release.md. |
-| Blocked/green merge proof | **Done:** PR #2 (demo only, never merged) shows the blocked gate and the green restore; screenshots and run URLs are in evidence/hosted-release.md. |
-| Clean-clone acceptance | After publication, clone into a new directory and follow README without reused raw files, images or volumes. Obtain a grounded cited answer and a correct absent-topic decline through Ingress. Repeat Pod deletion under traffic. This revised working tree has not passed that exact fresh-clone procedure. |
-| Revised real-model benchmark | Rerun the frozen 20 questions after the prompt change. Preserve historical baseline/results for comparison; manually review answer facts as well as citation validity. The historical run had 11 fallbacks among 18 answerable questions and one incorrect grounded answer. |
-| Production operational evidence | Capture Calico UI-to-Chroma denial, PVC persistence, live embedding-pin mismatch and real-model re-index continuity on the documented deployment. Fixture operation evidence does not prove all of these. |
-| Indexer memory answer | Record production whole-container/cgroup peak and samples while OCR/indexing runs. The 159 MiB parent RSS measurement does not establish the real Job's safety margin. |
-| Team review | Review the ADRs and AI-authored explanations; supply a truthful personal incident account/duration for engineering question 7. No student rewrite or hour-long debugging history is invented. |
-| Submission audit | Inspect evidence/submission-audit.txt and evidence/phase8-validation.json. The original checker remains unchanged; heuristic failures must be evaluated alongside source and outstanding acceptance checks. Rerun after final changes. |
-| Final Git review | The Phase 8 audit checks local history and the source snapshot for common credential formats. Repeat a dedicated secret scan before pushing; pattern checks cannot prove the absence of all secrets. |
+| Published source | Done: PR #1 merged the complete implementation; PR #3 merged release/gate evidence. The old statement that the shared implementation is uncommitted is superseded. |
+| Branches and protection | Done: main is protected by active Protect main ruleset, with one approval, all six CI checks, and no bypass actors. See evidence/branch-protection-api.json. Expanded browser screenshot is still pending. |
+| Docker Hub / Actions configuration | Done: existing configured namespace/secrets produced successful image publication. No secret values are recorded in documentation. |
+| First hosted release | Done: run 42474907543 passed test, build-push and deploy for 3a53930b91aa7db24e40ab8ef25a72684f293b87. |
+| Second hosted release | Done: run 42476095435 passed all three jobs for 622ff386867e35f118b477b8cc645d68d37928fb. |
+| Three SHA-tagged images | Done: API, UI and indexer tags were verified for both releases; links are in evidence/hosted-release.md. |
+| Failed and restored eval gate | Done: PR #2 and committed screenshots show a deliberate gate failure and restored green checks. |
+| Demo safety | Done: PR #2 is an open draft and remains unmerged. Its historical failure/restore links are retained. |
+| Written documents | README, ARCHITECTURE, CORPUS, PIPELINE, FAILURE-ANALYSIS, ENGINEERING-NOTES, AI-USAGE, ADRs 0001–0004 and operational runbooks are populated. Team review remains required. |
 
-An optional live hosted-generator test needs credentials and a compatible strict-schema
-model only if that provider is selected. Ollama is the primary assignment provider.
+## Remaining acceptance work
 
-## Classroom hand-in
-
-| Required deliverable | Current value |
+| Item | Required action and current limitation |
 | --- | --- |
-| Repository | https://github.com/MuhammadSaimHassan/rahbar — publish completed files and verify instructor access |
-| Successful cd.yml run URL | https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42474907543 |
-| Docker Hub API/UI/indexer links with SHA tags | Tag links for SHA 3a53930b91aa7db24e40ab8ef25a72684f293b87 are listed in evidence/hosted-release.md |
-| Committed eval/results.json and eval/baseline.json | Historical Phase 5 files exist and were committed in 2e5512d; revised prompt run pending |
+| Expanded branch-protection screenshot | Capture active enforcement/main target, the one-approval setting and all six checks with their additional settings expanded. Browser automation failed to initialize during this update. The saved API JSON verifies the configuration but does not replace the requested UI screenshot. |
+| Clean-clone real acceptance | On a suitable machine, clone merged main into a fresh directory, rebuild/fetch/index, obtain a grounded cited answer and correct absent-topic decline through Ingress, and delete an API Pod under traffic. Not established by the hosted fictional fixture. |
+| Revised real-model benchmark | Rerun the frozen 20 questions after the prompt revision. Preserve historical results/baseline and manually review answer facts, omissions, fallbacks and citations. No improved live-model quality is claimed. |
+| Production operational evidence | Capture Calico UI-to-Chroma denial with a positive control, PVC persistence, live pin-mismatch readiness/logs, and real same-model re-index/cache continuity. Existing fixture operations are separately scoped. |
+| Production indexer memory | Measure the whole-container/cgroup peak with samples during production indexing. The earlier 159 MiB parent-process RSS is not the Job's final memory peak or safety margin. |
+| Engineering answer 7 | Supply a truthful personal/team debugging account and duration. The 502 drain incident and checksum/download incidents may be documented only with accurate attribution. No student's first-person experience has been invented. |
+| Team documentation review | Review ADRs, source references and AI attribution. Read PARTNER_HANDOFF.md alongside this current status, because its earlier GitHub-pending notes are now historical. |
+| Final audit | Gitleaks v8.30.1 found zero findings in all-ref history (ten commits) and pending files on 2026-11-08. The unchanged checker was rerun; see evidence/owner-validation.json and owner-submission-audit.txt. Review its remaining heuristic findings and repeat checks after further edits. |
+| Classroom submission | Confirm instructor access and submit repository, successful CD run, matching three image-tag links and committed eval/results.json and eval/baseline.json by 2026-11-08 23:59 PKT. |
 
-The assignment states a deadline of 2026-11-08 at 23:59 PKT. Submit the actual links;
-this status document is not a substitute for successful runs or instructor access.
+The current local environment does not meet the documented 6 GiB cluster plus host
+inference budget. A suitable machine is required before the outstanding real-model
+acceptance can be honestly marked complete. Hosted CI/CD uses deterministic fictional
+fixtures and does not establish real-model accuracy.
 
-## Interpretation of the Phase 8 checker output
+## Release links for hand-in
 
-The original checker was run unchanged. The working checkout reports 145 passes,
-10 warnings and 13 failures; its source traversal also warns about an inaccessible
-Windows/WSL filesystem entry. An isolated nonignored-source snapshot, audited from
-its own root, reports 144 passes, six warnings and the same 13 failures. That snapshot
-has no Git metadata and therefore skips history checks. It is a static source audit,
-not a clean-clone deployment test.
+- Repository: https://github.com/MuhammadSaimHassan/rahbar
+- Latest verified recorded CD: https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42476095435
+- Matching SHA: 622ff386867e35f118b477b8cc645d68d37928fb
+- Image links and earlier release: evidence/hosted-release.md
+- Committed historical real results: eval/results.json and eval/baseline.json (initial baseline commit 2e5512d); revised-prompt run pending.
 
-| Reported failures | Source verification |
+Any later main merge starts another CD run. Inspect that run and use matching run/SHA
+links for the release selected for submission. Keep earlier runs labeled as historical.
+
+## Historical checker interpretation
+
+The Phase 8 working-tree audit recorded 145 passes, ten warnings and 13 failures;
+a clean nonignored-source snapshot recorded 144 passes, six warnings and the same
+13 failures. These were dated observations, not a fresh audit of current main.
+
+| Historical finding | Source-backed explanation |
 | --- | --- |
-| Missing requests and limits (2) | YAML parsing confirms CPU/memory requests and limits on all six base workload container definitions, including Job and CronJob. See phase8-validation.json and k8s/base/*.yaml. |
-| Unpinned runtime bases (2) | indexer/Dockerfile declares `FROM python:3.12.16-slim-bookworm AS runtime`; the other FROM instructions reference that local stage. |
-| Missing .git and __pycache__ exclusions (4) | Both Docker ignore files start with `*`, allow only runtime code/requirements, and exclude nested Python caches. The checker does not interpret allowlist semantics. |
-| Missing pytest, linter, Trivy, rollout and evaluator steps (5) | Workflows call scripts/ci-checks.sh, scripts/ci-scan.sh and scripts/ci-cluster.sh, which execute these commands and propagate failures with strict shell settings. The checker searches workflow text without following wrappers. |
+| Requests/limits missing (2) | Parsed compact YAML confirms CPU/memory requests and limits on all six base container definitions. |
+| Unpinned runtime bases (2) | FROM runtime refers to the previously pinned Python build stage, not an external unpinned image. |
+| Docker exclusions missing (4) | Allowlist contexts begin with * and explicitly exclude nested Python caches; the checker does not model allowlist semantics. |
+| CI commands missing (5) | Workflows call strict shell wrappers that actually execute pytest, lint, Trivy, rollout and evaluation. |
 
-Additional warnings about readiness, cache exclusions and capabilities are also
-heuristic: health.py checks collection count; answer.py bypasses unsafe cache cases;
-YAML parsing confirms `drop: [ALL]` on all six base containers. Git workflow warnings
-(short history, one author, no dev branch) are genuine remaining process issues.
-The lint also counts six failure-stage names because prose mentions prompt and
-temperature; only four measured stage experiments are claimed. No checker output
-should be treated as a substitute for the required acceptance demonstrations.
+Readiness checks collection count, answer.py excludes unsafe cache cases, and all six
+base containers drop ALL capabilities. The checker also counts six stage names in
+prose although only four measured failure experiments are claimed. Do not add fake
+commands or edit/disable the checker merely to manufacture a pass.
+
+Old warnings claiming no dev branch or only one author must not be copied as current
+facts: the repository now has dev and contributions from both members. The assignment
+specifies no mandatory 60% commit ceiling; the starter checker warns when either of
+the top two authors has below 35% of non-merge commits. Record genuine work under the
+correct identity and retain AI disclosure.
+
+
+Latest documentation audit: 147 passed · 9 warnings · 13 failures. This is an unchanged-checker observation, not a real deployment acceptance result.

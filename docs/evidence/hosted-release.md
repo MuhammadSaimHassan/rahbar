@@ -40,3 +40,24 @@ misread.
 - CI uses the deterministic fixture corpus, so these results do not measure real-model
   accuracy.
 - Branch-protection settings evidence is not included here.
+
+
+## Second release after evidence PR #3
+
+Verified on 2026-11-08:
+
+- PR #3 merged release/gate documentation into main.
+- Release SHA: `622ff386867e35f118b477b8cc645d68d37928fb`
+- CD run: https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42476095435
+- Jobs: test, build-push and deploy all passed.
+
+Matching public tags were verified for all three repositories:
+
+- https://hub.docker.com/r/saimhassan005/rahbar-api/tags?name=622ff386867e35f118b477b8cc645d68d37928fb
+- https://hub.docker.com/r/saimhassan005/rahbar-ui/tags?name=622ff386867e35f118b477b8cc645d68d37928fb
+- https://hub.docker.com/r/saimhassan005/rahbar-indexer/tags?name=622ff386867e35f118b477b8cc645d68d37928fb
+
+PR #2 has been converted to a draft and remains unmerged. The normal floor was
+restored for the historical green run; retain both run links to explain the demo.
+The current active branch rules are captured in branch-protection-api.json. Expanded
+UI screenshots remain pending because browser automation could not initialize.
