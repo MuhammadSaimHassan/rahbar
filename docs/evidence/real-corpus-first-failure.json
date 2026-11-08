@@ -1,0 +1,10 @@
+{
+  "run_url": "https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42496893362",
+  "source_commit": "927aaa1ff788b9feab6cb179cc59fe730306ed16",
+  "passed": false,
+  "stage": "configure exact inference egress before indexing",
+  "observed_error": "networkpolicies.networking.k8s.io \"indexer-to-ollama\" not found in namespace rahbar",
+  "diagnosis": "Outer real-indexer and real-query overlays did not set namespace, so their added policies were created in default while base objects were in rahbar.",
+  "remedy": "Set namespace: rahbar in both real overlays; validate rendered resource namespaces and include both real overlays in schema CI.",
+  "real_acceptance_completed": false
+}

@@ -75,3 +75,15 @@ correct identity and retain AI disclosure.
 
 
 Latest documentation audit: 147 passed · 9 warnings · 13 failures. This is an unchanged-checker observation, not a real deployment acceptance result.
+
+## Real acceptance update � PR #7, 2026-11-08
+
+PR #6 synchronized main into dev. PR #7 adds hosted real acceptance and corrects
+the real overlays' missing namespace. Run 42498284513 passed with fresh verified
+corpus, genuine cited/absent-topic Ingress responses and cached request continuity
+during Pod replacement (27/27). Production indexer whole-container peak is now
+measured: 188.43 MiB under the unchanged 1 GiB limit. See
+REAL-CORPUS-ACCEPTANCE.md and evidence/real-corpus-acceptance.json. These supersede
+the earlier pending entries for clean real acceptance and indexer peak; merge/review
+and final release are still required. Full revised benchmark and the separately
+listed operational experiments remain outstanding.
