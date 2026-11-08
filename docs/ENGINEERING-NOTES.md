@@ -114,6 +114,16 @@ The controlled fixture experiment returned five hits normally, rejected the chan
 pin with `Index metadata does not match the active catalog and embedding pin`, and
 returned five after restoration (`docs/evidence/failure-pin.json`). The earlier
 dependency smoke test separately recorded readiness 503 for a model mismatch.
+The fresh real run 42500255265 also created a disposable API Pod with a deliberately
+wrong EMBED_MODEL, while leaving the shared ConfigMap/index unchanged. Its /healthz
+returned 200 and /readyz returned 503 with an explicit embedding_pin mismatch naming
+both models and the common 768 dimension. Redis, index catalog and nonempty Chroma
+checks remained ok. Its saved logs show the same mismatch. See
+`docs/evidence/real-runtime-first-core.json`. The probe was removed afterwards;
+this is an isolated reproduction of the API-only mismatch, not a coordinated model
+migration. That run passed these core checks but its later HPA metric check failed;
+do not describe the whole workflow as green.
+
 Without these checks, models with equal dimensions could silently rank vectors in
 incompatible spaces; unequal dimensions would normally produce a store error.
 To change models, build a matching index and coordinate the shared configuration;
