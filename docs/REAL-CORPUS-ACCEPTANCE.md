@@ -60,3 +60,8 @@ real renders, and a regression checks every rendered namespaced resource. The fa
 run is retained in evidence/real-corpus-first-failure.json; it is not a passing run.
 The runner also detects Failed/FailureTarget Job conditions promptly, rather than
 waiting for a completion condition that a failed Job cannot reach.
+
+The next run (42498011937) stopped during the host Ollama startup probe with a
+connection reset (curl 56), before cluster deployment. The probe now retries all
+transient startup errors within a bounded two-minute window. This is not a change
+to application inference timeouts or acceptance criteria.

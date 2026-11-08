@@ -70,7 +70,8 @@ docker run -d --name "$ollama" --memory=6g --cpus=3 \
   -e OLLAMA_MAX_LOADED_MODELS=2 -e OLLAMA_NUM_PARALLEL=1 \
   -e OLLAMA_CONTEXT_LENGTH=4096 ollama/ollama:0.6.5
 ollama_owned=true
-curl --fail --silent --show-error --retry 30 --retry-delay 2 --retry-connrefused \
+curl --fail --silent --show-error --retry 30 --retry-delay 2 --retry-all-errors \
+  --retry-max-time 120 --connect-timeout 5 --max-time 10 \
   http://127.0.0.1:11434/api/version > "$report/ollama-version.json"
 timeout 900s docker exec "$ollama" ollama pull nomic-embed-text
 timeout 900s docker exec "$ollama" ollama pull llama3.2:3b
