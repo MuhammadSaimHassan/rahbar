@@ -260,10 +260,23 @@ Citation validity measures whether references match retrieved passages.
 The incorrect lab/theory answer and the low answer coverage show why the
 automated gate needs to be read alongside the per-question results.
 
-## Current verification boundary
+## Revised-prompt hosted real-model verification
 
-The Phase 5 answer results are historical and remain unchanged in `eval/results.json`
-and `eval/baseline.json`. The shared prompt changed during the final coding pass;
-a new real-model answer run has not been recorded. Later fixture results validate
-mechanics, edition filtering and poison handling, not an improvement over real Llama.
-The four independent failure measurements are explained in FAILURE-ANALYSIS.md.
+A fresh genuine-model run is now recorded in `eval/results.json`; the old results
+are preserved in `eval/history/results-before-prompt-v2.json` and the baseline is
+unchanged. Run 42499897552 reproduced recall@3 77.8%, recall@5 88.9%, valid emitted
+citations 8/8 and both required abstentions. All 18 answerable requests were cache
+MISS, without the older CPU embedding adapter or previous-run answer reuse.
+
+It answered 6/18 answerable questions; AI-assisted source-fact review found five
+complete answers and one incorrect lab/theory conditional answer. Twelve questions
+returned fallback. The user-injection question was answered correctly, but all four
+version and all three exact-term questions still fell back. Thus no improved
+aggregate answer coverage is claimed. The historical environment differed in
+context/timeouts and adapter use; these are measured runs, not a controlled
+prompt-only A/B test. See REAL-MODEL-EVALUATION.md and
+`evidence/real-model-semantic-review.json` for every question and limitations.
+
+Fixture tests independently validate deterministic mechanics. They do not replace
+real-model semantic review, and a matching citation alone does not prove a correct
+conditional answer. The four failure measurements remain in FAILURE-ANALYSIS.md.
