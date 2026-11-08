@@ -173,3 +173,11 @@ kubectl --context "$profile" -n ingress-nginx rollout status deployment/ingress-
 ip=$(minikube -p "$profile" ip)
 python scripts/check_real_acceptance.py --api "http://$ip" --context "$profile" \
   --out "$report/real-acceptance.json" --indexer-log "$report/indexer.log"
+
+if [[ "${REAL_EVALUATION:-false}" == true ]]; then
+  # Only this ephemeral run owns this Redis; remove answer cache, not the catalog.
+  kubectl --context "$profile" -n rahbar exec deployment/api -- python -c \
+    'import os,redis; r=redis.Redis.from_url(os.environ["REDIS_URL"]); keys=list(r.scan_iter(match="rahbar:cache:rahbar:*")); print("Removed initial warm answer cache keys:", r.unlink(*keys) if keys else 0)'
+  python -u eval/run_eval.py --api "http://$ip" --host rahbar.local --timeout 300 \
+    --out "$report/real-model-results.json" --checkpoint "$report/real-model-checkpoint.json"
+fi
