@@ -1,0 +1,29 @@
+Corpus verification completed 2026-11-05 PKT.
+
+Acquisition: 9 public documents, downloaded sequentially with pauses.
+Total downloaded bytes: 34974582
+PDFs: 7
+Physical PDF pages: 279
+HTML snapshots: 2 (not counted toward PDF pages)
+
+Command: python corpus/fetch.py --verify
+Checked 9 manifest entries; 0 verification failures
+
+Command: python -m pytest -q -p no:cacheprovider corpus/tests
+7 passed
+
+Ruff over corpus/fetch.py, corpus/audit.py and corpus/tests:
+All checks passed!
+
+A second fetch reused all 9 cached files, making no download requests.
+Raw PDFs, HTML, OCR text, extracted text and page previews are gitignored.
+
+Diagnostic source audit with the indexer image (network disabled):
+- 40 textless PDF pages sent to OCR.
+- 34 produced non-empty text; 6 remained without OCR text.
+- The 8-page scanned startup policy has zero text-layer characters and no font rows.
+- Representative scanned, table and definition pages were rendered and visually reviewed.
+- This audit is separate from the production extraction/indexing pipeline.
+
+See corpus-audit.json for per-document counts and scoped review-term counts.
+See scanned-policy-pdffonts.txt for exact font-inspection output.

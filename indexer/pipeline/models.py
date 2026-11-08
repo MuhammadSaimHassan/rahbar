@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+import json
+from dataclasses import asdict, dataclass, field
 
 
 @dataclass
@@ -32,6 +33,9 @@ class Chunk:
     page: int
     doc_version: str
     superseded: bool
+
+    def export_line(self) -> str:
+        return json.dumps(asdict(self), ensure_ascii=False) + "\n"
 
     def metadata(self) -> dict[str, str | int | bool]:
         """Chroma metadata values must be str, int, float or bool."""

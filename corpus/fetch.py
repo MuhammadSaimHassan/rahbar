@@ -85,10 +85,23 @@ def load_sources() -> list[dict]:
         sys.exit("corpus/sources.yaml not found. Copy corpus/sources.example.yaml to "
                  "corpus/sources.yaml and keep the documents you want.")
     data = yaml.safe_load(SOURCES.read_text(encoding="utf-8")) or {}
+    if not isinstance(data, dict):
+        sys.exit("sources.yaml must contain a documents list")
     docs = data.get("documents") or []
+    if not isinstance(docs, list) or not docs:
+        sys.exit("sources.yaml needs a non-empty documents list")
+    filenames = set()
     for i, doc in enumerate(docs):
-        if not doc.get("name") or not doc.get("url"):
+        if not isinstance(doc, dict) or not doc.get("name") or not doc.get("url"):
             sys.exit(f"sources.yaml entry {i + 1} needs both name and url")
+        stem = slug(doc["name"])
+        if stem in filenames:
+            sys.exit(f"sources.yaml entry {i + 1} has a duplicate filename slug: {stem}")
+        filenames.add(stem)
+        if not isinstance(doc.get("superseded", False), bool):
+            sys.exit(f"sources.yaml entry {i + 1}: superseded must be true or false")
+        if doc.get("sha256") and not re.fullmatch(r"[0-9a-f]{64}", str(doc["sha256"])):
+            sys.exit(f"sources.yaml entry {i + 1}: invalid sha256")
     return docs
 
 
@@ -105,6 +118,13 @@ def fetch(force: bool) -> int:
             name, url = doc["name"], normalise(doc["url"])
             old = previous.get(name)
             if old and not force and (RAW / old["file"]).exists() and old["url"] == url:
+                actual = hashlib.sha256((RAW / old["file"]).read_bytes()).hexdigest()
+                if actual != old["sha256"] or actual != doc.get("sha256", actual):
+                    failures.append((name, "cached bytes differ from the pinned hash; use --force"))
+                    print(f"  FAILED  {name}: cached hash mismatch")
+                    # Preserve the old hash so a failed run cannot bless corruption.
+                    entries.append(old)
+                    continue
                 print(f"  have    {old['file']}")
                 entries.append({**old, "doc_version": doc.get("doc_version", "unknown"),
                                 "superseded": bool(doc.get("superseded", False))})
@@ -115,14 +135,29 @@ def fetch(force: bool) -> int:
                 if response.status_code != 200:
                     raise RuntimeError(f"HTTP {response.status_code}")
                 content_type = response.headers.get("content-type", "")
+                if not response.content:
+                    raise RuntimeError("empty response")
+                if (
+                    urlsplit(url).path.lower().endswith(".pdf")
+                    and not response.content.startswith(b"%PDF-")
+                ):
+                    raise RuntimeError("expected a PDF, but the response has no PDF header")
                 if "drive.google.com" in url and "html" in content_type:
                     raise RuntimeError("Google Drive returned a web page, not the file "
                                        "(too large for direct download, or not shared publicly)")
-                file = slug(name) + guess_extension(url, content_type)
+                digest = hashlib.sha256(response.content).hexdigest()
+                if doc.get("sha256") and digest != doc["sha256"]:
+                    raise RuntimeError("download differs from pinned sha256; review the source version")
+                extension = (
+                    ".pdf" if response.content.startswith(b"%PDF-")
+                    else guess_extension(url, content_type)
+                )
+                file = slug(name) + extension
                 (RAW / file).write_bytes(response.content)
                 entries.append({
                     "name": name, "url": url, "file": file, "bytes": len(response.content),
-                    "sha256": hashlib.sha256(response.content).hexdigest(),
+                    "sha256": digest,
+                    "final_url": str(response.url),
                     "content_type": content_type.split(";")[0],
                     "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
                     "doc_version": doc.get("doc_version", "unknown"),
@@ -132,6 +167,8 @@ def fetch(force: bool) -> int:
             except Exception as exc:  # report every failure, keep going
                 failures.append((name, str(exc)))
                 print(f"  FAILED  {name}: {exc}")
+                if old and old["url"] == url:
+                    entries.append(old)
             time.sleep(PAUSE_SECONDS)
 
     index_path.write_text(json.dumps(entries, indent=2), encoding="utf-8")
@@ -166,10 +203,24 @@ def verify() -> int:
     if not MANIFEST.exists():
         sys.exit("no corpus/MANIFEST.md yet; run fetch first")
     rows = re.findall(r"\| `([^`]+)` \| [\d,]+ \| `([0-9a-f]{64})` \|", MANIFEST.read_text())
+    if not rows:
+        print("manifest has no document hashes; fetch a corpus before verifying")
+        return 1
     bad = 0
+    configured = load_sources() if SOURCES.exists() else []
+    pins = {slug(doc["name"]): doc.get("sha256") for doc in configured}
+    stems = {Path(file).stem for file, _ in rows}
+    for stem in pins:
+        if stem not in stems:
+            print(f"  unlisted  {stem} (configured source missing from manifest)")
+            bad += 1
     for file, expected in rows:
         path = RAW / file
-        if not path.exists():
+        pin = pins.get(path.stem)
+        if pin and pin != expected:
+            print(f"  unpinned  {file} (manifest differs from sources.yaml)")
+            bad += 1
+        elif not path.exists():
             print(f"  missing   {file}")
             bad += 1
         elif hashlib.sha256(path.read_bytes()).hexdigest() != expected:
@@ -177,7 +228,7 @@ def verify() -> int:
             bad += 1
         else:
             print(f"  ok        {file}")
-    print(f"\n{len(rows) - bad} of {len(rows)} match the manifest")
+    print(f"\nChecked {len(rows)} manifest entries; {bad} verification failures")
     return 1 if bad else 0
 
 

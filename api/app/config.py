@@ -32,9 +32,16 @@ class Settings:
     chroma_host: str = "chroma"
     chroma_port: int = 8000
     collection: str = "rahbar"
+    embed_dimension: int = 768
+    redis_url: str = "redis://redis:6379/0"
+    dependency_timeout: float = 2.0
 
     # Retrieval and generation
     top_k: int = 5
+    relevance_floor: float = 0.70
+    cache_threshold: float = 0.85
+    generation_timeout: float = 90.0
+    ollama_use_mmap: bool = False
     temperature: float = 0.2
     llm_model: str = "llama3.2:3b"
     ollama_url: str = "http://host.minikube.internal:11434"
@@ -52,7 +59,14 @@ def get_settings() -> Settings:
         chroma_host=os.environ.get("CHROMA_HOST", "chroma"),
         chroma_port=_int("CHROMA_PORT", 8000),
         collection=os.environ.get("CHROMA_COLLECTION", "rahbar"),
+        embed_dimension=_int("EMBED_DIMENSION", 768),
+        redis_url=os.environ.get("REDIS_URL", "redis://redis:6379/0"),
+        dependency_timeout=_float("DEPENDENCY_TIMEOUT", 2.0),
         top_k=_int("TOP_K", 5),
+        relevance_floor=_float("RELEVANCE_FLOOR", 0.70),
+        cache_threshold=_float("CACHE_THRESHOLD", 0.85),
+        generation_timeout=_float("GENERATION_TIMEOUT", 90.0),
+        ollama_use_mmap=os.environ.get("OLLAMA_USE_MMAP", "false").lower() == "true",
         temperature=_float("TEMPERATURE", 0.2),
         llm_model=os.environ.get("LLM_MODEL", "llama3.2:3b"),
         ollama_url=os.environ.get("OLLAMA_URL", "http://host.minikube.internal:11434"),

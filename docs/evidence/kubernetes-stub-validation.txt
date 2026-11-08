@@ -1,0 +1,37 @@
+Local validation, 2026-11-04
+
+Both overlays rendered with kubectl kustomize.
+Strict kubeconform v0.6.7 validation of both rendered outputs:
+Summary: 58 resources found in 2 files - Valid: 58, Invalid: 0, Errors: 0, Skipped: 0
+
+Python 3.12 offline checks (temporary container with --network none):
+API pytest: 15 passed
+Indexer pytest: 4 passed
+Ruff (API app and tests): All checks passed!
+mypy (API app): Success: no issues found in 22 source files
+
+Earlier check-runner issues were corrected: tools cannot execute from a no-exec
+temporary mount, and indexer tests require the repository's eval/fixtures layout.
+The final run used installed tools and the correct read-only source/fixture mounts.
+
+Command: python -u scripts/smoke_stack.py
+Exit code: 0
+PASS empty/missing index: readiness 503; liveness 200
+PASS dummy index: same API process becomes ready
+PASS embedding mismatch: readiness 503 and conflict logged
+PASS Redis outage: readiness 503; liveness 200
+PASS Redis recovery: readiness returns to 200
+
+The integration check ran on an internal Docker network with real pinned Chroma and
+Redis images, read-only root filesystems and non-root users. No host ports were
+published. Temporary containers and their network were removed after the check.
+
+Not yet verified on Kubernetes:
+- Calico enforcement and UI-to-Chroma block
+- Ingress routing
+- PVC persistence across replacement pods
+- HPA CPU percentage and actual resource measurements
+- Pod deletion continuity and rolling update/rollback
+
+minikube is not installed; Docker currently has about 3.75 GB allocated,
+less than the documented 6 GB minikube allocation. No existing cluster was modified.

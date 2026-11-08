@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: chroma
+spec:
+  serviceName: chroma
+  replicas: 1
+  selector:
+    matchLabels: {app: chroma}
+  template:
+    metadata:
+      labels: {app: chroma}
+    spec:
+      serviceAccountName: chroma
+      automountServiceAccountToken: false
+      terminationGracePeriodSeconds: 60
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile: {type: RuntimeDefault}
+      containers:
+        - name: chroma
+          image: chromadb/chroma:1.0.12
+          imagePullPolicy: IfNotPresent
+          env:
+            # The image's /config.yaml sets persist_path: /data.
+            - {name: ANONYMIZED_TELEMETRY, value: "FALSE"}
+            - {name: HOME, value: /tmp}
+          ports:
+            - {name: http, containerPort: 8000}
+          resources:
+            requests: {cpu: 100m, memory: 256Mi}
+            limits: {cpu: "1", memory: 768Mi}
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: {drop: [ALL]}
+          startupProbe:
+            httpGet: {path: /api/v2/heartbeat, port: http}
+            periodSeconds: 2
+            failureThreshold: 60
+          livenessProbe:
+            httpGet: {path: /api/v2/heartbeat, port: http}
+            periodSeconds: 20
+          readinessProbe:
+            httpGet: {path: /api/v2/heartbeat, port: http}
+            periodSeconds: 5
+          volumeMounts:
+            - {name: data, mountPath: /data}
+            - {name: tmp, mountPath: /tmp}
+      volumes:
+        - name: tmp
+          emptyDir: {sizeLimit: 64Mi}
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: [ReadWriteOnce]
+        resources:
+          requests: {storage: 2Gi}

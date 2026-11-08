@@ -1,0 +1,31 @@
+# Evidence index
+
+Evidence is scoped to the experiment that produced it. Older text logs are retained
+as historical records; their original pending-work notes can be superseded by later
+measurements. Current acceptance gaps are listed in ../SUBMISSION.md.
+
+| Evidence | What it supports | Limit |
+| --- | --- | --- |
+| [coding-validation.txt](coding-validation.txt) | Final coding checks: 87 passed, one skip, 82.80% API coverage | Recorded coding run; not a hosted CI/CD result |
+| [coding-fixture-results.json](coding-fixture-results.json) | Seven Ingress fixture questions, retrieval and citation/abstention gates | Fictional documents and deterministic generation |
+| [operations.json](operations.json) | Three ready addresses, rollout, rollback, Pod replacement, top/HPA output, 135 successful requests, restoration | Finite k3d fixture run; HPA temporarily fixed at three; no indexer peak |
+| [operations-before-drain-fix.json](operations-before-drain-fix.json) | One failed request before drain fix | Retained failure, not final acceptance |
+| [failure-extraction.json](failure-extraction.json) | OCR on/off real scanned policy | Text coverage, not character accuracy |
+| [failure-chunking.json](failure-chunking.json) | Default versus fixed 100/0 evidence mapping | Mapping coverage, not ranked recall |
+| [failure-pin.json](failure-pin.json) | Reject incompatible fixture embedding pin; restored search succeeds | Retriever-level check, not a Kubernetes Pod screenshot |
+| [failure-source.json](failure-source.json) | Retired fixture hits introduced by removing source filter | Retrieval contamination, not a generated-answer experiment |
+| [phase5-retrieval-sweep.json](phase5-retrieval-sweep.json) | Three real-Nomic chunk configurations | Small frozen benchmark |
+| [phase5-cache-sweep.json](phase5-cache-sweep.json) | Three thresholds with/without runtime guards | Labeled seeds assumed eligible; limited paraphrase reuse |
+| [phase6-local.txt](phase6-local.txt) | Local actionlint, manifests, scans, k3d fixture gate and deliberate failure/restoration | No GitHub merge/protection proof or hosted CD URL |
+| [indexer-validation.txt](indexer-validation.txt) | OCR/chunk checks, synthetic publication continuity, parent RSS | Historical milestone; not a production cgroup peak |
+| [indexer-preprocessing.json](indexer-preprocessing.json) | Per-source preprocessing and token amplification | Offline preprocessing |
+| [corpus-audit.json](corpus-audit.json), [corpus-verification.txt](corpus-verification.txt) | Corpus size, text layers and hash verification | Acquisition audit |
+| [table-extraction.txt](table-extraction.txt), [scanned-policy-pdffonts.txt](scanned-policy-pdffonts.txt) | Table example and scanned text-layer inspection | Representative source checks |
+| [container-smoke.txt](container-smoke.txt), [kubernetes-stub-validation.txt](kubernetes-stub-validation.txt) | Early image, schema and real-dependency smoke checks | Earlier milestone, not final full-cluster acceptance |
+| [golden-preparation.txt](golden-preparation.txt) | Source oracle/projection preparation | No ranked quality measurement |
+| [submission-audit.txt](submission-audit.txt), [source snapshot audit](phase8-source-snapshot-audit.txt), [phase8-validation.json](phase8-validation.json) | Current Phase 8 documentation and audit checks | Includes unresolved items; inspect detailed scope |
+
+The historical real-model answers and manual-review facts are in ../../eval/results.json
+and ../../eval/baseline.json. They predate the final prompt change. No branch-protection,
+blocked/green merge screenshots, hosted CD success or Docker Hub SHA evidence has been
+created; those items remain outstanding.

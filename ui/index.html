@@ -112,7 +112,7 @@ function renderAnswer(data, cacheHeader) {
   if (data.confidence) chips.append(chip(`confidence: ${data.confidence}`));
   if (data.provider) chips.append(chip(`provider: ${data.provider}`));
   const cached = typeof data.cached === "boolean" ? data.cached
-               : cacheHeader ? cacheHeader.toUpperCase() === "HIT" : null;
+               : ["HIT", "MISS"].includes(cacheHeader) ? cacheHeader === "HIT" : null;
   if (cached !== null) chips.append(chip(cached ? "cache: hit" : "cache: miss"));
   card.append(chips);
 
@@ -159,7 +159,10 @@ function errorMessage(status, body) {
   return `Request failed (HTTP ${status})${detail ? `: ${detail}` : "."}`;
 }
 
+let previousQuestion = null;
+
 async function ask(question) {
+  if (send.disabled) return;
   thread.append(el("div", { class: "q" }, question));
   const pending = el("div", { class: "pending" }, "Retrieving passages and writing an answer…");
   thread.append(pending);
@@ -169,7 +172,7 @@ async function ask(question) {
     const res = await fetch(`${API_BASE}/api/ask`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ question }),
+      body: JSON.stringify({ question, previous_question: previousQuestion }),
     });
     let body = null;
     try { body = await res.json(); } catch { /* non-JSON error page */ }
@@ -178,6 +181,7 @@ async function ask(question) {
       thread.append(el("div", { class: "err" }, errorMessage(res.status, body)));
     } else {
       thread.append(renderAnswer(body, res.headers.get("X-Cache")));
+      previousQuestion = question;
     }
   } catch (err) {
     pending.remove();

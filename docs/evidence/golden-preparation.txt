@@ -1,0 +1,38 @@
+Golden-set milestone, 2026-11-05 PKT.
+
+Primary source-authored questions:
+- ordinary: 10
+- version: 4 (two changes, each tested in both editions)
+- exact: 3
+- abstain: 2
+- injection: 1
+Total: 20
+
+Cache labels fixed before threshold experiments:
+- should hit: 6 equivalent paraphrases
+- must miss: 6 near misses
+- ineligible for caching: 3 policy cases
+
+Source authorship:
+- Read original policy/handbook text, older-policy OCR and the captured fee HTML.
+- Visually checked complete PDF pages 14/20 (2023) and 19/28 (2026) for version changes.
+- Reused earlier visually checked grade table, harassment definition and startup scan.
+- Question/answer oracles were authored before projecting labels onto unranked chunks.
+- No vector retrieval, model answer or similarity threshold was used to pick the labels.
+
+Command: python eval/prepare_golden.py --chunks corpus/raw/pipeline/chunks.jsonl --freeze
+Projected 18 answerable questions; no unmapped evidence units.
+The two must-abstain questions have no relevant passages.
+
+Command: python eval/prepare_golden.py --check-lock
+Frozen benchmark hashes match.
+
+Temporary-copy guard checks passed:
+- LF/CRLF text produces the same portable benchmark hash.
+- An unreviewed oracle change is detected.
+- A superseded source without explicit old-version intent is rejected.
+
+Ruff: All checks passed!
+
+This snapshot is local, not a Git commit. Team review and commit-before-tuning remain
+pending. No retrieval scores, cache threshold results or baselines are claimed here.

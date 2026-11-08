@@ -1,0 +1,837 @@
+{
+  "context": "k3d-rahbar-codecheck",
+  "namespace": "rahbar",
+  "original_image": "rahbar-api:code-final",
+  "alternate_image": "rahbar-api:ops-previous",
+  "requests": [
+    {
+      "stage": "baseline",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.25
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.36
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.375
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.421
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.313
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.312
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.454
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.343
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.328
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.438
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.406
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.391
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.235
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.281
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.281
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.266
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.344
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.359
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.734
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.282
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.281
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.312
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.297
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.469
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.391
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.406
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.297
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.344
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.343
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.36
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.281
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.453
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.344
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.422
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.359
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.391
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.312
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.438
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.406
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.328
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.281
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.422
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.375
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.36
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.39
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.328
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.36
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.343
+    },
+    {
+      "stage": "rollout",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.344
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 3.094
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.328
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.547
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.328
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.359
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.313
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.421
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.313
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.312
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.344
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.265
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.36
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.5
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.625
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.328
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.297
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.469
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.64
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.516
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.484
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.453
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.297
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.438
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.453
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.281
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.391
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.343
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.297
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.282
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.328
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.39
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.328
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.422
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.422
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.453
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.282
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.296
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.297
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.391
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.266
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.296
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.329
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.421
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.329
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.281
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.406
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.344
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.437
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.5
+    },
+    {
+      "stage": "rollback",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.735
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.468
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.641
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.5
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.672
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.343
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.282
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.468
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.313
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.594
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.468
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.532
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.546
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.438
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.469
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.656
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.312
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.469
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.281
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.407
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.312
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.422
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.265
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.485
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.359
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.391
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.234
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.438
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.281
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.438
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.531
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.5
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.25
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.266
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.422
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.375
+    },
+    {
+      "stage": "pod-replacement",
+      "status": 200,
+      "ok": true,
+      "seconds": 0.312
+    }
+  ],
+  "ready_endpoint_addresses": [
+    "10.42.0.56",
+    "10.42.0.58",
+    "10.42.0.59"
+  ],
+  "stage": "pod-replacement",
+  "rollout_image": "rahbar-api:ops-previous",
+  "rollback_image": "rahbar-api:code-final",
+  "deleted_pod_uid": "fba41696-2f6b-4360-a73a-d72258f118cd",
+  "replacement_ready_pods": [
+    "api-5b4dc8ff98-72mfn",
+    "api-5b4dc8ff98-rwswr",
+    "api-5b4dc8ff98-s9j8j"
+  ],
+  "top_pods": "NAME                             CPU(cores)   MEMORY(bytes)   \napi-5b4dc8ff98-72mfn             538m         48Mi            \napi-5b4dc8ff98-rwswr             269m         55Mi            \napi-5b4dc8ff98-s9j8j             252m         56Mi            \nchroma-0                         32m          48Mi            \nfixture-model-59db4d6949-wzmmr   6m           21Mi            \nredis-7b7bf7d99-mhqvh            49m          13Mi            \nui-695fbb6f7b-n7sqd              1m           4Mi             \n",
+  "hpa": "NAME   REFERENCE        TARGETS         MINPODS   MAXPODS   REPLICAS   AGE\napi    Deployment/api   cpu: 180%/70%   3         3         3          18m\n",
+  "operations_completed": true,
+  "restore_errors": [],
+  "passed": true
+}

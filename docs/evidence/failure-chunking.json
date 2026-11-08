@@ -1,0 +1,21 @@
+{
+  "stage": "chunking",
+  "baseline": {
+    "chunks": 950,
+    "mapped_evidence_units": 18,
+    "evidence_units": 18,
+    "unmapped": [],
+    "chunks_sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+  },
+  "fixed_100_no_overlap": {
+    "chunks": 1257,
+    "mapped_evidence_units": 17,
+    "evidence_units": 18,
+    "unmapped": [
+      "v03:0"
+    ],
+    "chunks_sha256": "a26317321dd4d18fcac13f29ef427493e001258da60860153ed43cbf2389c5a7"
+  },
+  "measurement": "Source evidence mapping coverage before ranked retrieval.",
+  "remedy": "Restore structure-aware 400/50 chunking and rerun the live recall sweep."
+}

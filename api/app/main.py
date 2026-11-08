@@ -15,12 +15,14 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
+from starlette.concurrency import run_in_threadpool
 
 from .config import get_settings
 from .logjson import configure_logging, request_id_var
 from .providers.llm import get_provider
 from .retrieval import get_retriever
 from .routes import ask, health, metrics
+from .services.health import DependencyHealth
 
 log = logging.getLogger("rahbar.api")
 
@@ -32,9 +34,10 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     app.state.settings = settings
     app.state.retriever = get_retriever(settings)
     app.state.provider = get_provider(settings)
-    # STARTER-TODO(4.4): compare the collection's embedding-model metadata with
-    # settings.embed_model here, and make /readyz fail on a mismatch.
-    # This process only reads the index. The indexer Job writes it.
+    app.state.dependency_health = DependencyHealth(settings)
+    # Failed dependencies keep readiness false without killing the API process.
+    # Recheck on every readiness request so a later indexer Job can make it ready.
+    await run_in_threadpool(app.state.dependency_health.check)
     log.info(
         "api started",
         extra={"retriever": settings.retriever, "llm_provider": settings.llm_provider,
@@ -50,6 +53,8 @@ app = FastAPI(title="RAHBAR API", lifespan=lifespan)
 async def request_context(request: Request, call_next):  # type: ignore[no-untyped-def]
     rid = request.headers.get("X-Request-ID") or uuid.uuid4().hex
     token = request_id_var.set(rid)
+    usage = {"prompt": 0, "completion": 0}
+    usage_token = metrics.token_usage_var.set(usage)
     start = time.perf_counter()
     status = 500
     try:
@@ -65,7 +70,9 @@ async def request_context(request: Request, call_next):  # type: ignore[no-untyp
         metrics.LATENCY.labels(path=path).observe(elapsed)
         if path not in ("/healthz", "/readyz", "/metrics"):
             log.info("request", extra={"path": path, "status": status,
-                                       "ms": round(elapsed * 1000, 1)})
+                                       "ms": round(elapsed * 1000, 1),
+                                       "tokens_in": usage["prompt"], "tokens_out": usage["completion"]})
+        metrics.token_usage_var.reset(usage_token)
         request_id_var.reset(token)
 
 

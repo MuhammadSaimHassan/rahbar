@@ -1,0 +1,45 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: indexer-to-redis
+spec:
+  podSelector:
+    matchLabels: {app: indexer}
+  policyTypes: [Egress]
+  egress:
+    - to:
+        - podSelector:
+            matchLabels: {app: redis}
+      ports:
+        - {protocol: TCP, port: 6379}
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: redis-from-indexer
+spec:
+  podSelector:
+    matchLabels: {app: redis}
+  policyTypes: [Ingress]
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels: {app: indexer}
+      ports:
+        - {protocol: TCP, port: 6379}
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: indexer-to-ollama
+spec:
+  podSelector:
+    matchLabels: {app: indexer}
+  policyTypes: [Egress]
+  egress:
+    - to:
+        # TEST-NET placeholder: replace with the actual minikube host IP /32.
+        # Until configured, host inference is deliberately unreachable.
+        - ipBlock: {cidr: 192.0.2.1/32}
+      ports:
+        - {protocol: TCP, port: 11434}

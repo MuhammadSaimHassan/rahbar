@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: api-to-ollama
+spec:
+  podSelector:
+    matchLabels: {app: api}
+  policyTypes: [Egress]
+  egress:
+    - to:
+        # Replace the TEST-NET placeholder with the Ollama host's exact IP /32.
+        - ipBlock: {cidr: 192.0.2.1/32}
+      ports:
+        - {protocol: TCP, port: 11434}

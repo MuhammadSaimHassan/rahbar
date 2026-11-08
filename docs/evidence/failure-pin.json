@@ -1,0 +1,8 @@
+{
+  "stage": "retrieval",
+  "baseline_hits": 5,
+  "mismatched_model_hits": 0,
+  "failure": "Index metadata does not match the active catalog and embedding pin",
+  "restored_hits": 5,
+  "remedy": "Restore the API embedding pin to match the published index."
+}

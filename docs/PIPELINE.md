@@ -2,8 +2,8 @@
 
 The five production indexing stages are implemented in `indexer/pipeline/`. Real-corpus
 preprocessing and fixture publication are separate checks: the latter uses a synthetic
-embedding service to verify mechanics, not retrieval quality. A complete real-model
-publication requires host Ollama with `nomic-embed-text` available.
+embedding service to verify mechanics, not retrieval quality. Real-model publication and the historical Phase 5 evaluation were completed using host
+Ollama with `nomic-embed-text`; the revised prompt still needs a fresh live evaluation.
 
 ## Extraction
 PDF extraction uses pdfplumber, physical 1-based page numbers, font/layout heading hints
@@ -46,7 +46,8 @@ as a footer; structured rows are now explicitly exempt. Input Document objects a
 modified in place.
 
 ## Chunking
-The current **untuned** target is 400 lexical tokens with up to 50 tokens of overlap.
+The selected target is 400 lexical tokens with up to 50 tokens of overlap, justified
+by the three-configuration Phase 5 comparison below.
 Lexical tokens are Unicode words and punctuation, defined in `pipeline/text.py`; they
 are not the model's BPE tokens. A section title prefix counts against the hard cap.
 Split order is section/clause → paragraph → sentence → lexical-token fallback. Tables
@@ -87,20 +88,16 @@ the whole-container peak or a justification of the final Kubernetes memory limit
 | Grading HTML snapshot | 8 |
 | Scanned startup policy | 21 |
 
-| Size (lexical tokens) | Maximum overlap | recall@5 | Status |
-| --- | --- | --- | --- |
-| 400 | 50 | Not run | 950 prepared chunks; current untuned default |
-
-The source-authored golden set and cache labels are now frozen locally in `eval/`.
-All 18 answerable source units project onto the current chunk export without ranked
-retrieval. See `eval/README.md` for oracle/projection separation and the required Git
-commit. Three measured configurations and shipped-choice justification are still pending.
+The source-authored golden set was frozen and committed before tuning. All 18
+answerable source units project onto the default chunk export without ranked retrieval.
+The measured three-configuration comparison and cache sweep below supersede the initial
+untuned settings. See `eval/README.md` for oracle/projection separation.
 
 ## Embedding
 The shared ConfigMap pins `EMBED_MODEL` and `EMBED_DIMENSION`; production uses
 `nomic-embed-text` and 768 dimensions. The stub overlay keeps `dummy-768`. The indexer
 batches at most 16 texts into Ollama `/api/embed` calls with `truncate=false`. Nomic
-document inputs receive `search_document: `; the future query embedder must use
+document inputs receive `search_document: `; the query embedder uses
 `search_query: `. Returned model names, vector counts, dimensions, numeric finiteness
 and non-zero norms are validated. Vectors are normalized before storage. Transient
 transport/429/5xx failures retry twice with backoff; malformed results fail immediately.
@@ -108,8 +105,7 @@ The model/dimension preflight runs before expensive OCR.
 
 Chroma collection metadata records model, dimension, generation, expected count, chunk
 configuration and token unit. API startup/readiness resolves the active generation and
-checks its metadata against the API pin. API retrieval will reuse that resolver in the
-query phase. See the [Ollama embedding API](https://docs.ollama.com/api/embed).
+checks its metadata against the API pin. API retrieval reuses that resolver once per request. See the [Ollama embedding API](https://docs.ollama.com/api/embed).
 
 ## Storage and publication
 
@@ -162,7 +158,8 @@ Use the real-query overlay to activate host Ollama generation.
 Publication invalidates the old index generation's namespace:
 `rahbar:cache:<logical>:<generation>:*`. The query path uses the generation captured for the request and a finite TTL.
 Later requests resolve the new generation and cannot see entries written by an older
-request. The cosine cutoff remains provisional until the cache sweep runs.
+request. The selected cosine cutoff is 0.85 with runtime guards; the measured sweep below
+records both false-hit prevention and limited paraphrase reuse.
 
 ## Evaluation method
 
@@ -262,3 +259,11 @@ also returned a fallback and did not repeat the injected instruction.
 Citation validity measures whether references match retrieved passages.
 The incorrect lab/theory answer and the low answer coverage show why the
 automated gate needs to be read alongside the per-question results.
+
+## Current verification boundary
+
+The Phase 5 answer results are historical and remain unchanged in `eval/results.json`
+and `eval/baseline.json`. The shared prompt changed during the final coding pass;
+a new real-model answer run has not been recorded. Later fixture results validate
+mechanics, edition filtering and poison handling, not an improvement over real Llama.
+The four independent failure measurements are explained in FAILURE-ANALYSIS.md.

@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fixture-model
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: fixture-model}
+  template:
+    metadata:
+      labels: {app: fixture-model}
+    spec:
+      automountServiceAccountToken: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        seccompProfile: {type: RuntimeDefault}
+      containers:
+        - name: model
+          image: rahbar-indexer:dev
+          imagePullPolicy: IfNotPresent
+          command: [python, /fixture/ollama_stub.py]
+          ports:
+            - {name: http, containerPort: 11434}
+          readinessProbe:
+            tcpSocket: {port: http}
+          resources:
+            requests: {cpu: 25m, memory: 32Mi}
+            limits: {cpu: "1", memory: 128Mi}
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: {drop: [ALL]}
+          volumeMounts:
+            - {name: fixture-model, mountPath: /fixture, readOnly: true}
+      volumes:
+        - name: fixture-model
+          configMap:
+            name: fixture-model
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: fixture-model
+spec:
+  selector: {app: fixture-model}
+  ports:
+    - {name: http, port: 11434, targetPort: http}
