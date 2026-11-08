@@ -36,3 +36,10 @@ regression tests, diagnosed the observed misplaced-policy and startup-probe fail
 and reviewed the passing run 42498284513. Real model outputs and measured memory
 are saved as evidence; the finite cached traffic test is not a full golden benchmark.
 Commits use Saim's configured identity at his request, with AI assistance disclosed.
+
+Codex authored the remaining hosted benchmark and real-operation tools/PRs, preserved
+the old baseline/results, compared all 20 generated responses against the frozen
+answer facts, and documented the actual low answer coverage and conditional-rule
+error. Those semantic judgments are AI-assisted and require team review. It also
+formatted equivalent resource/security YAML, made CI/CD step names explicit and
+ran the unchanged checker/Gitleaks. No personal debugging duration was invented.

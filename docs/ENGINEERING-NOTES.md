@@ -23,8 +23,8 @@ does not serialize manually created Jobs.
 
 `api/app/routes/health.py:10` implements independent process liveness;
 line 17 starts readiness, which calls the bounded dependency checker. The manifest
-uses `/healthz` for startup/liveness at `k8s/base/api.yaml:50` and line 54, and
-`/readyz` for readiness at line 59.
+uses `/healthz` for startup/liveness at `k8s/base/api.yaml:56` and line 60, and
+`/readyz` for readiness at line 65.
 
 With the endpoints swapped, a live API would fail liveness while Chroma is slow.
 Three failures at a 20-second probe interval can trigger a restart during the outage;
@@ -39,7 +39,7 @@ recorded 90-second outage experiment.
 
 The HPA in `k8s/base/hpa.yaml` targets API CPU relative to requested CPU,
 with 3–8 replicas and a 70% target. Each API requests 100m at
-`k8s/base/api.yaml:44`. Host Ollama performs inference outside these pods.
+`k8s/base/api.yaml:45`. Host Ollama performs inference outside these pods.
 Waiting on its HTTP response contributes little API CPU; extra API replicas do not
 increase that model server's capacity. Embedding, validation and traffic handling
 can consume CPU independently of generation latency.
@@ -57,7 +57,8 @@ API pods alone should remain bounded by model throughput.
 
 ## 4. Indexer memory limit, observed memory and margin
 
-`k8s/base/indexer-job.yaml:30` requests 256 MiB; line 31 limits memory to 1 GiB.
+`k8s/base/indexer-job.yaml:30` begins the requests block (256 MiB); line 33
+begins the limits block (1 GiB).
 The CronJob uses the same 1 GiB limit. The fresh production run
 [42498284513](https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42498284513)
 performed real OCR, extraction, embedding and publication of all 950 chunks from
@@ -151,7 +152,7 @@ process exits; replica counts alone do not establish that drain interval.
 
 `scripts/operational_demo.py` sends requests throughout rollout, rollback and
 pod deletion. Increasing `preStop` to 15 seconds and total termination grace to
-330 seconds (`k8s/base/api.yaml:21` and line 66) produced 135 successful samples
+330 seconds (`k8s/base/api.yaml:21` and line 71) produced 135 successful samples
 with zero failures in `docs/evidence/operations.json`. The follow-up run also waits
 for metrics-server rather than treating an immediate `<unknown>` HPA sample as final.
 These are finite fixture observations, not a guarantee under all real-model loads.

@@ -211,16 +211,25 @@ python3 scripts/check_submission.py
 
 Smoke scripts require built images and Docker. The last checker is a heuristic lint;
 review its output alongside source and [submission status](docs/SUBMISSION.md).
-The last coding validation passed 87 tests (one integration skip), API coverage 82.80%,
-and seven fixture questions through Ingress. The finite operational run passed 135
-requests with zero failures and three ready endpoints. These fixture results do not
-measure real-model answer quality or Calico enforcement.
+Current CI runs lint/types, API coverage of at least 60%, tests, strict manifest
+validation, image builds, fixable HIGH/CRITICAL scans and the fixture evaluation gate.
+Fixture results verify deterministic mechanics and do not establish real-model quality.
 
-The historical real-corpus baseline reports recall@3 77.8%, recall@5 88.9%, validity
-of 10 emitted citations 100%, and both required abstentions correct. See
-[PIPELINE.md](docs/PIPELINE.md) for the three chunk configurations, cache thresholds,
-CPU adapter/cache caveats and manual answer review; [eval/README.md](eval/README.md)
-explains the frozen oracle and regression gates.
+Fresh hosted real acceptance passed on nine verified sources and 950 chunks, with
+cited/absent-topic responses through Ingress and 27 successful cached requests during
+API Pod replacement. The production indexer's cgroup peak was 188.43 MiB under 1 GiB.
+See [real acceptance](docs/REAL-CORPUS-ACCEPTANCE.md).
+
+The revised genuine-model 20-question run reports recall@3 77.8%, recall@5 88.9%,
+8/8 valid emitted citations and both required abstentions correct. It answered only
+6/18 answerable questions: five complete, one incorrect lab/theory conditional answer,
+and twelve fallbacks. No overall answer-quality improvement is claimed. Current raw
+results, unchanged baseline and old outputs are committed; see the
+[per-question review](docs/REAL-MODEL-EVALUATION.md).
+
+Real Calico denial/controls, PVC recovery, live pin mismatch and reindex continuity
+passed in run 42500255265. That workflow failed its final HPA numeric-reading check;
+a corrected follow-up is still running. See [real operations](docs/REAL-RUNTIME-OPERATIONS.md).
 
 ## Documentation
 

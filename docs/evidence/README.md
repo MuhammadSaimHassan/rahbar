@@ -49,3 +49,24 @@ pending source: [history report](gitleaks-history.json),
 verified before running the scanner. The original checker output is retained in
 [owner-submission-audit.txt](owner-submission-audit.txt). These checks do not replace
 the pending real-corpus acceptance or expanded browser screenshot.
+
+## Latest real verification and release audit
+
+- real-corpus-acceptance.json, real-corpus-model-tags.json and real-indexer-memory-samples.txt:
+  fresh genuine-model acceptance and separately measured cgroup/sample memory.
+- real-model-results-20261108.json and real-model-semantic-review.json: revised
+  frozen 20-question output, exact run/source provenance and AI-assisted fact review.
+  Current eval/results.json is this revised run; old output is under eval/history
+  and eval/baseline.json is unchanged. Earlier references to both files as exclusively
+  historical are superseded.
+- real-runtime-first-core.json: successful Calico/PVC/pin/reindex subtests from an
+  overall failed workflow; real-rollout-first-metrics-failure.json retains that
+  workflow's HPA failure despite zero sampled traffic failures. Follow-up pending.
+- latest-verified-release.json: existing main release 6683ba6, its successful CD
+  jobs and three matching Docker tag digests. This predates final feature merges.
+- final-protection-verification.json, final-gitleaks-history.json,
+  final-gitleaks-working-tree.json and final-submission-audit.log: exact audit scope,
+  with two named-Docker-stage checker false positives explicitly explained.
+
+Read ../SUBMISSION.md and ../FINAL-SUBMISSION.md for current remaining human/release
+actions. A raw log/artifact is not independent student review or a browser screenshot.
