@@ -68,7 +68,9 @@ The Python parent's `ru_maxrss` was separately **195,276,800 bytes (186.23 MiB)*
 The cgroup value accounts for the container's processes, rather than treating the
 parent RSS as the entire OCR pipeline. A shell wrapper read the cgroup peak after
 the real writer completed, before its container exited. Timestamped metrics-server
-samples are saved in `docs/evidence/real-indexer-memory-samples.txt`; sampling can
+samples from `kubectl top pods -l job-name=indexer --containers` are saved in
+`docs/evidence/real-indexer-memory-samples.txt`. Their highest observed memory was
+151 MiB; sampling can
 miss a transient peak, so it does not replace the cgroup high-water mark.
 
 Relative to the 1,024 MiB limit, this run used **18.40%**, leaving **835.57 MiB
