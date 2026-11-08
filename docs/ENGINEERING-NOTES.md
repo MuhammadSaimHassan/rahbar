@@ -83,7 +83,8 @@ whole-container calculation. Exact output is in `docs/evidence/real-corpus-accep
 
 ## 5. Where recall@5 is worst
 
-The historical real-corpus baseline (`eval/baseline.json`, `by_type`) reports:
+The fresh revised-prompt run (`eval/results.json`, `by_type`, run 42499897552)
+reproduces the historical baseline retrieval figures:
 
 | Question type | Questions | Recall@5 |
 | --- | ---: | ---: |
@@ -101,6 +102,16 @@ clause identifiers and negation. Hybrid lexical/BM25 plus dense retrieval, follo
 by metadata filtering and reranking, is the next retrieval improvement to evaluate.
 It is not implemented. Exact-term questions happen to score best on this small sample;
 the assignment's expected general weakness is not a reason to report different data.
+
+The fresh run passed structural gates but answered only 6/18 answerable questions:
+five covered the reference facts, one lab/theory conditional answer was incorrect,
+and twelve returned fallback. All four version-sensitive and all three exact-term
+questions fell back despite the retrieval figures above. Hence retrieval recall,
+valid emitted citations and actual answer coverage are separate measurements. The
+injection question was answered correctly without following the injected command.
+No overall improvement over the earlier five complete answers is claimed. See
+REAL-MODEL-EVALUATION.md and the AI-assisted per-question semantic review; team
+review remains required.
 
 ## 6. Change EMBED_MODEL and restart only the API
 
