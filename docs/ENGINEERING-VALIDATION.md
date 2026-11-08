@@ -1,21 +1,19 @@
-# Engineering validation evidence
+# Completed engineering validation evidence
 
-The production indexer measurement is complete: nine verified sources, 950 chunks,
-400/50 fingerprint, real Nomic/768 embedding, 188.43 MiB cgroup peak under 1 GiB.
-The highest kubectl top memory sample was 151 MiB. Answer 4 derives its margin from
-the cgroup high-water mark and retains the sampled output separately.
+- Answer 4 uses the cold production Job cgroup peak: 188.43 MiB under 1 GiB,
+  separately from 151 MiB highest kubectl top sample and parent RSS.
+- Answer 5 uses the fresh frozen 20-question run and keeps retrieval recall,
+  structural citation validity and actual factual coverage separate. Five complete
+  answers, one incorrect conditional answer and twelve fallbacks are disclosed.
+- Answers 3 and 6 use real HPA/top and live pin-mismatch evidence. The complete
+  operations rerun passed with HPA CPU 53%/70%, restored 3–8 bounds, 119 successful
+  reindex samples and 342 successful rollout/rollback/replacement samples.
+- Answer 7 documents the actual AI-assisted HPA acceptance failure/retry cycle:
+  16:30:46–17:31:11 UTC, 1 hour 25 seconds. This includes setup/execution/waiting,
+  not a fabricated individual student's hands-on debugging duration.
 
-The revised full benchmark is complete: recall@5 88.9%, all eight emitted citations
-valid, both required abstentions correct. AI-assisted review found five complete
-answers, one incorrect conditional answer and twelve fallbacks among eighteen
-answerable questions. The baseline remains unchanged and old output is preserved.
-Answer 5 compares retrieval by type and explicitly distinguishes factual coverage.
-
-Run 42500255265 passed enforced Calico denial with positive controls, Chroma PVC
-recovery, live pin-mismatch readiness/liveness and real same-pin reindex continuity.
-It failed its later numeric HPA observation; the corrected run remains pending.
-Do not present that whole workflow as passed. Answer 6 cites the actual mismatch
-response/log evidence; final HPA and rollout interpretation awaits the rerun.
-
-No student's debugging time or first-person experience has been invented. A truthful
-team account remains required for the personal-duration portion of answer 7.
+Exact reports, model identities and timestamps are committed under docs/evidence.
+The team still needs to review/understand the answers, source references and AI
+attribution. Finite warmed traffic is not an uncached capacity guarantee, and the
+same-content alternate image reference tests rollout mechanics, not cross-version
+compatibility. Prior failed reports remain visible.
