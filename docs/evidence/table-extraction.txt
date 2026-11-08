@@ -1,0 +1,6 @@
+Source: Academic Rules 2026, physical PDF page 12 (printed page 6)
+Before (plain text):
+A+ 4.00 C+ 2.33
+After (structured cells):
+| Grade | Points | Grade | Points |
+| A+ | 4.00 | C+ | 2.33 |

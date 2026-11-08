@@ -1,0 +1,6 @@
+# This is the submission's production topology, still using the stub milestone.
+# CI/CD will replace all three application tags with a commit SHA before deployment.
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base

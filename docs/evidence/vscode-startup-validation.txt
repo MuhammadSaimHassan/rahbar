@@ -1,0 +1,21 @@
+2026-11-07 VS Code/WSL path fix
+
+Makefile now quotes venv paths containing spaces.
+make install VENV=/home/saim_hassan12345/.venvs/rahbar completed successfully.
+Preview uses this Ubuntu-local environment; project files stay on E.
+TestClient exercised sample-answer mode, with unavailable loopback dependencies.
+No TCP server was left running. Full real RAG deployment was not exercised.
+
+No broken requirements found.
+{"ts": "2026-11-07T16:39:03Z", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: GET http://127.0.0.1:8000/api/v2/tenants/default_tenant/databases/default_database/collections/rahbar \"HTTP/1.1 404 Not Found\"", "request_id": "-"}
+{"ts": "2026-11-07T16:39:03Z", "level": "WARNING", "logger": "rahbar.api.health", "msg": "dependencies not ready", "request_id": "-", "checks": {"redis": "unavailable or invalid catalog (ConnectionError)", "chroma": "collection unavailable (HTTPStatusError)"}}
+{"ts": "2026-11-07T16:39:03Z", "level": "INFO", "logger": "rahbar.api", "msg": "api started", "request_id": "-", "retriever": "stub", "llm_provider": "stub", "embed_model": "nomic-embed-text", "top_k": 5}
+{"ts": "2026-11-07T16:39:03Z", "level": "INFO", "logger": "rahbar.api", "msg": "request", "request_id": "4ff0a17f8c4b4703938e6dee97141a3c", "path": "unmatched", "status": 200, "ms": 85.7, "tokens_in": 0, "tokens_out": 0}
+{"ts": "2026-11-07T16:39:03Z", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: GET http://testserver/ \"HTTP/1.1 200 OK\"", "request_id": "-"}
+{"ts": "2026-11-07T16:39:03Z", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: GET http://testserver/healthz \"HTTP/1.1 200 OK\"", "request_id": "-"}
+{"ts": "2026-11-07T16:39:03Z", "level": "INFO", "logger": "rahbar.answer", "msg": "answered", "request_id": "c25c0ba1c67245eab79a3d539a56a3cc", "retriever": "stub", "provider": "stub", "top_k": 5, "chunk_ids": ["stub-001", "stub-002", "stub-003"], "scores": [0.91, 0.84, 0.77], "answered_from_context": true, "generation": null, "cache": "BYPASS", "follow_up": false}
+{"ts": "2026-11-07T16:39:03Z", "level": "INFO", "logger": "rahbar.api", "msg": "request", "request_id": "c25c0ba1c67245eab79a3d539a56a3cc", "path": "/api/ask", "status": 200, "ms": 72.4, "tokens_in": 0, "tokens_out": 0}
+{"ts": "2026-11-07T16:39:03Z", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST http://testserver/api/ask \"HTTP/1.1 200 OK\"", "request_id": "-"}
+STARTUP_CHECK {"ui": 200, "healthz": 200, "ask": 200, "citations": 1, "uvicorn": "0.34.2"}
+
+Exit code: 0

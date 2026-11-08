@@ -1,0 +1,43 @@
+Production indexer milestone, 2026-11-05 PKT.
+
+Offline unit tests:
+- Indexer: 33 passed (including original dummy tests).
+- API: 20 passed (including catalog resolution and prior contracts).
+- API and indexer Ruff checks passed.
+- mypy: no issues in 23 API source files and 11 indexer source files.
+
+Strict kubeconform v0.6.7 validation:
+Summary: 90 resources found in 3 files - Valid: 90, Invalid: 0, Errors: 0, Skipped: 0
+
+Final real-corpus dry run, with networking disabled:
+- 9 documents processed; 950 chunks prepared.
+- All chunks <= 400 lexical tokens; all IDs unique; required metadata present.
+- No cover website URL was propagated as a section name.
+- 113362 extracted / 112074 cleaned / 118733 stored-chunk lexical tokens.
+- Token amplification: 1.0474 relative to extracted; 1.0594 relative to cleaned.
+- Peak parent Python RSS: 166387712 bytes, with a warm OCR cache.
+- This does not measure OCR-child/container peak memory and did not call embeddings.
+- See indexer-preprocessing.json for per-source measurements.
+
+Command: python -u scripts/smoke_indexer.py
+Final-image integration result, exit code 0:
+PASS five-stage fixture index published; API follows the catalog
+PASS re-index: 37 readiness checks stayed 200
+PASS old index retained; generation changed; previous cache invalidated
+Embeddings were synthetic test vectors; this is not a retrieval-quality result.
+
+The integration test used actual Chroma 1.0.12 and Redis 7.4.2 with an isolated,
+test-only embedding HTTP service. All temporary containers/networks were removed.
+The default and corpus-bearing indexer images both built successfully.
+
+Corrections made during validation:
+- Repeated table rows are protected from margin stripping.
+- Edition years are not mistaken for page numbers.
+- Cover URLs cannot become section labels; OCR headings and numeric evidence are distinct.
+- Large source scans are hashed once per document for OCR-cache identity.
+- The test embedding server is mounted alongside its package so its imports resolve.
+
+Still pending:
+- Real Ollama/Nomic corpus publication (no host Ollama service was available).
+- Kubernetes Job execution, resource measurements and live operational demonstrations.
+- Golden set, retrieval-quality evaluation and three measured chunk configurations.

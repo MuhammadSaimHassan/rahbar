@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-07",
+  "scope": "Documentation, static source snapshot and local history only; no clean-clone Kubernetes deployment was performed.",
+  "documentation_files_checked": 19,
+  "relative_links_checked": 53,
+  "broken_relative_links": [],
+  "engineering_source_references": [
+    {
+      "file": "k8s/base/indexer-job.yaml",
+      "line": 2,
+      "valid": true
+    },
+    {
+      "file": "k8s/base/api.yaml",
+      "line": 6,
+      "valid": true
+    },
+    {
+      "file": "api/app/main.py",
+      "line": 31,
+      "valid": true
+    },
+    {
+      "file": "k8s/base/reindex-cronjob.yaml",
+      "line": 8,
+      "valid": true
+    },
+    {
+      "file": "api/app/routes/health.py",
+      "line": 10,
+      "valid": true
+    },
+    {
+      "file": "k8s/base/api.yaml",
+      "line": 50,
+      "valid": true
+    },
+    {
+      "file": "k8s/base/api.yaml",
+      "line": 44,
+      "valid": true
+    },
+    {
+      "file": "k8s/base/indexer-job.yaml",
+      "line": 30,
+      "valid": true
+    },
+    {
+      "file": "k8s/base/reindex-cronjob.yaml",
+      "line": 37,
+      "valid": true
+    },
+    {
+      "file": "api/app/services/health.py",
+      "line": 59,
+      "valid": true
+    },
+    {
+      "file": "api/app/retrieval/chroma.py",
+      "line": 65,
+      "valid": true
+    },
+    {
+      "file": "k8s/base/api.yaml",
+      "line": 21,
+      "valid": true
+    }
+  ],
+  "readme_bash_syntax": [
+    {
+      "block": 1,
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "block": 2,
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "block": 3,
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "block": 4,
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "block": 5,
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "block": 6,
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "block": 7,
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "block": 8,
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "block": 9,
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "block": 10,
+      "exit_code": 0,
+      "error": ""
+    },
+    {
+      "block": 11,
+      "exit_code": 0,
+      "error": ""
+    }
+  ],
+  "credential_pattern_scan": {
+    "working_source_files": 173,
+    "local_commits": 3,
+    "unique_history_blobs": 65,
+    "findings": [],
+    "limitation": "Recognizable formats only, not exhaustive secret detection; filenames/assignment patterns checked separately by original lint."
+  },
+  "original_checker_exit_code": 1,
+  "source_snapshot_checker_exit_code": 1,
+  "snapshot_scope": "git-listed tracked and untracked nonignored source; no .git, raw documents, cached models, images or volumes copied",
+  "source_snapshot_path": "C:\\Users\\mmc\\AppData\\Local\\Temp\\rahbar-doc-audit-32xcp_tf",
+  "tests": "No application code changed in Phase 8; prior coding verification retained in coding-validation.txt.",
+  "source_snapshot_root_verified": true,
+  "parsed_base_container_resources_and_capabilities": [
+    {
+      "file": "k8s/base/api.yaml",
+      "container": "api",
+      "cpu_and_memory_requests": true,
+      "cpu_and_memory_limits": true,
+      "drop_all_capabilities": true
+    },
+    {
+      "file": "k8s/base/chroma-statefulset.yaml",
+      "container": "chroma",
+      "cpu_and_memory_requests": true,
+      "cpu_and_memory_limits": true,
+      "drop_all_capabilities": true
+    },
+    {
+      "file": "k8s/base/indexer-job.yaml",
+      "container": "indexer",
+      "cpu_and_memory_requests": true,
+      "cpu_and_memory_limits": true,
+      "drop_all_capabilities": true
+    },
+    {
+      "file": "k8s/base/redis.yaml",
+      "container": "redis",
+      "cpu_and_memory_requests": true,
+      "cpu_and_memory_limits": true,
+      "drop_all_capabilities": true
+    },
+    {
+      "file": "k8s/base/reindex-cronjob.yaml",
+      "container": "indexer",
+      "cpu_and_memory_requests": true,
+      "cpu_and_memory_limits": true,
+      "drop_all_capabilities": true
+    },
+    {
+      "file": "k8s/base/ui.yaml",
+      "container": "ui",
+      "cpu_and_memory_requests": true,
+      "cpu_and_memory_limits": true,
+      "drop_all_capabilities": true
+    }
+  ],
+  "source_snapshot_checker_summary": "144 passed \u00b7 6 warnings \u00b7 13 failures",
+  "original_checker_summary": "145 passed \u00b7 10 warnings \u00b7 13 failures"
+}

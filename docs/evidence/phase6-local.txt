@@ -1,0 +1,27 @@
+Phase 6 local verification
+
+Workflow syntax passed actionlint 1.7.11.
+Strict kubeconform validation passed for the production and CI overlays
+with Kubernetes 1.35.5 schemas (29 and 38 resources).
+Offline API tests passed with 79.93% application coverage (60% required).
+
+k3d 5.9.0 with k3s 1.35.5 ran the isolated fixture deployment.
+The indexer Job completed and the API and UI deployments rolled out.
+Ingress served the UI and all seven fixture API questions.
+The fixture evaluation reported 100% recall@3, 100% recall@5,
+100% citation validity, and 100% required abstention correctness.
+The separate fixture check passed expected facts, historical edition
+isolation, and the retrieved poisoned passage check.
+
+A deliberate relevance floor of 1.01 yielded zero citations and caused
+the evaluator to exit 1. Restoring the original floor passed the same
+fixture baseline and factual checks again.
+
+The patched Python and nginx images rebuilt successfully. Trivy 0.70.0
+reported zero fixable HIGH or CRITICAL findings in api, ui, and indexer.
+The patched API passed 28 offline tests (one cluster-dependent test skipped)
+and the patched indexer passed 33 tests. Linux mypy passed both packages.
+The patched images were imported into the isolated cluster, the indexer
+published 16 fixture chunks, and the full Ingress smoke and fixture gate
+passed again.
+The patched indexer reproduced the Phase 5 950-chunk fingerprint and all 18 answerable evidence mappings in an offline real-corpus dry run.

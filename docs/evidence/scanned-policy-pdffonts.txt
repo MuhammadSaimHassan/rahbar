@@ -1,0 +1,4 @@
+Command: pdffonts corpus/raw/faculty-entrepreneurship-and-technical-start-ups-policy.pdf
+
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------

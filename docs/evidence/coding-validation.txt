@@ -1,0 +1,25 @@
+Completed local coding verification
+
+No unfinished application or experiment source stubs remain.
+Offline suite passed 87 tests with one cluster-dependent integration test skipped.
+API coverage was 82.80% (reported rounded to 83%).
+Ruff and the API Linux-platform mypy check passed.
+
+The lab deployment passed all seven fixture questions through Ingress, including
+historical edition filtering and the retrieved poisoned passage check.
+The operational demonstration passed with three ready Service endpoints,
+rollout to an alternate API image, rollback to the original image, a ready-pod
+replacement, valid CPU/HPA output, 135 sampled requests and zero HTTP failures.
+Image, replica and HPA restoration succeeded. The disposable cluster was removed.
+
+Four measured experiments are saved separately:
+- extraction: 2264 tokens with OCR versus 0 without OCR on the scanned PDF
+- chunking: 18/18 mapped evidence units versus 17/18 with fixed 100-token windows
+- retrieval pin: 5 hits normally, model mismatch rejected, 5 hits after restoration
+- source filter: 0 superseded hits with the filter versus 3 without it
+
+The hosted provider is verified with mocked HTTP responses. A compatible external
+model and user credentials are still required for a live hosted-provider test.
+The revised prompt has not replaced the historical Phase 5 real-model baseline.
+The full submission audit still includes documentation and hosted-release work,
+and its regular-expression checks misidentify some existing YAML/wrapper patterns.

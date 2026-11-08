@@ -1,0 +1,140 @@
+{
+  "verified_on_pkt": "2026-11-05",
+  "documents": 9,
+  "pdf_pages": 279,
+  "diagnostic_ocr_pages": 40,
+  "ocr_pages_with_text": 34,
+  "ocr_pages_still_without_text": 6,
+  "review_text_files": 9,
+  "review_term_counts": {
+    "shuttle": 0,
+    "bus route": 0,
+    "departure": 0,
+    "timetable": 3,
+    "transport": 16,
+    "hostel": 8
+  },
+  "sources": [
+    {
+      "file": "undergraduate-academic-rules-aug-2023.pdf",
+      "kind": "pdf",
+      "pages": 26,
+      "pages_without_text": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "total_text_characters": 212,
+      "font_rows": 3,
+      "duplicate_text_page_groups": []
+    },
+    {
+      "file": "academic-rules-handbook-jun-2026.pdf",
+      "kind": "pdf",
+      "pages": 58,
+      "pages_without_text": [
+        2,
+        56,
+        57,
+        58
+      ],
+      "total_text_characters": 96875,
+      "font_rows": 136,
+      "duplicate_text_page_groups": []
+    },
+    {
+      "file": "prospectus-2026-academic-rules-and-regulations.pdf",
+      "kind": "pdf",
+      "pages": 5,
+      "pages_without_text": [],
+      "total_text_characters": 22144,
+      "font_rows": 8,
+      "duplicate_text_page_groups": []
+    },
+    {
+      "file": "student-handbook-jun-2026.pdf",
+      "kind": "pdf",
+      "pages": 64,
+      "pages_without_text": [
+        1,
+        2,
+        63,
+        64
+      ],
+      "total_text_characters": 144535,
+      "font_rows": 192,
+      "duplicate_text_page_groups": []
+    },
+    {
+      "file": "annual-report-2019-20.pdf",
+      "kind": "pdf",
+      "pages": 33,
+      "pages_without_text": [],
+      "total_text_characters": 50659,
+      "font_rows": 7,
+      "duplicate_text_page_groups": []
+    },
+    {
+      "file": "annual-report-2023-24.pdf",
+      "kind": "pdf",
+      "pages": 85,
+      "pages_without_text": [],
+      "total_text_characters": 202049,
+      "font_rows": 15,
+      "duplicate_text_page_groups": []
+    },
+    {
+      "file": "fee-structure-page.html",
+      "kind": "html",
+      "pages": null,
+      "tables": 3,
+      "text_characters": 6749
+    },
+    {
+      "file": "grading-page.html",
+      "kind": "html",
+      "pages": null,
+      "tables": 5,
+      "text_characters": 7728
+    },
+    {
+      "file": "faculty-entrepreneurship-and-technical-start-ups-policy.pdf",
+      "kind": "pdf",
+      "pages": 8,
+      "pages_without_text": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "total_text_characters": 0,
+      "font_rows": 0,
+      "duplicate_text_page_groups": []
+    }
+  ]
+}

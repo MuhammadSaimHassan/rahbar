@@ -1,0 +1,95 @@
+# Labels are defined before any similarity-threshold experiments.
+# Seed/candidate IDs refer to source-authored questions in golden.yaml.
+schema_version: 1
+pairs:
+  - id: c01
+    seed_question_id: o01
+    candidate: Which CGPA threshold keeps an undergraduate off academic warning in the June 2026 rules?
+    expected_hit: true
+    reason: Same threshold and policy scope, phrased differently.
+  - id: c02
+    seed_question_id: o03
+    candidate: Do the June 2026 rules let me enrol in a course whose prerequisites I have not passed?
+    expected_hit: true
+    reason: Same registration condition and edition.
+  - id: c03
+    seed_question_id: o04
+    candidate: For a repeated course under the June 2026 rules, is CGPA based on my latest grade even if it is worse?
+    expected_hit: true
+    reason: Same latest-attempt rule, including the lower-grade condition.
+  - id: c04
+    seed_question_id: o05
+    candidate: Under the June 2026 rules I passed the lab but failed theory. Do I need to retake both?
+    expected_hit: true
+    reason: Same theory/lab outcome and edition.
+  - id: c05
+    seed_question_id: o09
+    candidate: For faculty startups under the May 2022 policy, how many years is the initial university-IP licence free?
+    expected_hit: true
+    reason: Same licensing period, not the employment-duration requirement.
+  - id: c06
+    seed_question_id: e03
+    candidate: What is the BBA/BS per-credit tuition in the captured Fall 2026 fee schedule?
+    expected_hit: true
+    reason: Same programme category, fee unit and snapshot.
+
+  - id: c07
+    seed_question_id: o01
+    candidate: What CGPA is required to graduate under the June 2026 rules?
+    candidate_reference:
+      source: academic-rules-handbook-jun-2026.pdf
+      section: "1.25"
+      pages: [10, 11]
+    expected_hit: false
+    reason: Graduation and academic warning are different conditions even though both use 2.00; their evidence and answer wording differ.
+  - id: c08
+    seed_question_id: o05
+    candidate: Under the June 2026 rules I passed theory but failed the lab. Must I repeat both?
+    candidate_reference:
+      source: academic-rules-handbook-jun-2026.pdf
+      section: "4.8"
+      pages: [20]
+    expected_hit: false
+    reason: Reversing which component was passed changes the answer to lab only.
+  - id: c09
+    seed_question_id: o08
+    candidate_question_id: o09
+    expected_hit: false
+    reason: More than one year of employment is not the two-year free licensing period.
+  - id: c10
+    seed_question_id: v01
+    candidate_question_id: v02
+    expected_hit: false
+    requires_scope_isolation: true
+    reason: The policy editions give opposite answers about new summer electives.
+  - id: c11
+    seed_question_id: v03
+    candidate_question_id: v04
+    expected_hit: false
+    requires_scope_isolation: true
+    reason: The regular-semester extra-course rule changed between these editions.
+  - id: c12
+    seed_question_id: o10
+    candidate: Is the admission fee refundable under the captured fee refund policy?
+    candidate_reference:
+      source: fee-structure-page.html
+      section: Fee Refund Policy
+      pages: [1]
+    expected_hit: false
+    reason: Admission fee and security deposit have different refund rules.
+
+policy_cases:
+  - id: p01
+    question: Even if my most recent grade is lower?
+    history_question_ids: [o04]
+    expected_cacheable: false
+    reason: follow_up
+  - id: p02
+    question_id: a01
+    expected_cacheable: false
+    reason: abstention
+  - id: p03
+    question_id: o01
+    answer_validation: failed
+    expected_cacheable: false
+    reason: failed_validation

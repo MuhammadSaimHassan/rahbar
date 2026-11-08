@@ -10,11 +10,17 @@ from __future__ import annotations
 
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class AskRequest(BaseModel):
     question: str = Field(min_length=3, max_length=500)
+    previous_question: str | None = Field(default=None, min_length=3, max_length=500)
+
+    @field_validator("question", "previous_question", mode="before")
+    @classmethod
+    def strip_question(cls, value: object) -> object:
+        return value.strip() if isinstance(value, str) else value
 
 
 class Passage(BaseModel):

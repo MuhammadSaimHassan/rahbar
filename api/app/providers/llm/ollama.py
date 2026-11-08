@@ -1,20 +1,42 @@
-"""Ollama provider: ollama-host or ollama-incluster (section 3.5). Yours to build."""
+"""Schema-constrained answers from host or in-cluster Ollama."""
 
 from __future__ import annotations
 
+import httpx
+
 from ...config import Settings
+from ...routes.metrics import record_tokens
 from ...schemas import Answer, Passage
+from .prompt import messages
 
 
 class OllamaProvider:
     name = "ollama"
 
     def __init__(self, settings: Settings) -> None:
-        self.settings = settings   # ollama_url, llm_model, temperature
+        self.settings = settings
 
     def generate(self, question: str, passages: list[Passage]) -> Answer:
-        # STARTER-TODO(3.4): build the augmented prompt (instructions, numbered evidence,
-        # then the question), call POST {ollama_url}/api/chat with the Answer schema as
-        # the output format, and turn the reply into an Answer. Section 3.4 lists what
-        # a production call needs around it; read it before you write this.
-        raise NotImplementedError("OllamaProvider.generate: see STARTER-TODO(3.4)")
+        settings = self.settings
+        options: dict[str, float | bool] = {"temperature": settings.temperature}
+        if settings.ollama_use_mmap:
+            options["use_mmap"] = True
+        response = httpx.post(
+            f"{settings.ollama_url.rstrip('/')}/api/chat",
+            json={
+                "model": settings.llm_model,
+                "messages": messages(question, passages),
+                "format": Answer.model_json_schema(),
+                "options": options,
+                "stream": False,
+            },
+            timeout=settings.generation_timeout, trust_env=False,
+        )
+        response.raise_for_status()
+        data = response.json()
+        if not isinstance(data, dict):
+            raise ValueError("Invalid Ollama response envelope")
+        for kind, key in (("prompt", "prompt_eval_count"), ("completion", "eval_count")):
+            count = data.get(key)
+            record_tokens(kind, count)
+        return Answer.model_validate_json(data["message"]["content"], strict=True)

@@ -1,0 +1,9 @@
+{
+  "golden": "golden.fixture.yaml",
+  "golden_sha256": "fe544be1bde6eaf727c2dcc5e6c9a2c2f6a2299155662a3e941071ce528b53b3",
+  "questions": 7,
+  "recall@3": 1.0,
+  "recall@5": 1.0,
+  "citation_validity": 1.0,
+  "abstention_correctness": 1
+}

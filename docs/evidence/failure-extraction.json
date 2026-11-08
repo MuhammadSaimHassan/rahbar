@@ -1,0 +1,28 @@
+{
+  "stage": "extraction",
+  "source": "faculty-entrepreneurship-and-technical-start-ups-policy.pdf",
+  "baseline_tokens": 2264,
+  "without_ocr_tokens": 0,
+  "baseline_ocr_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "without_ocr_empty_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "failure_observed": true,
+  "remedy": "Enable OCR and verify page coverage before publication."
+}

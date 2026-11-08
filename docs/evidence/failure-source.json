@@ -1,0 +1,175 @@
+{
+  "stage": "source",
+  "generation": "89273f25c79b4367b2ba4547124db149",
+  "baseline": {
+    "hits": [
+      {
+        "chunk_id": "03383e8be252ba037eeb4bb8d38ecd97",
+        "source": "academic-rules-2026.md",
+        "page": 1,
+        "superseded": false,
+        "doc_version": "2026-06",
+        "section": "1.1 1. Attendance"
+      },
+      {
+        "chunk_id": "e207275b9e8f72428268ca6b6fbab45c",
+        "doc_version": "2026-06",
+        "superseded": false,
+        "section": "1.2 1. Attendance",
+        "source": "academic-rules-2026.md",
+        "page": 1
+      },
+      {
+        "chunk_id": "eac93c6e8ea4dd8b256703881c641774",
+        "superseded": false,
+        "source": "academic-rules-2026.md",
+        "section": "3.2 3. Repeating a course",
+        "doc_version": "2026-06",
+        "page": 1
+      },
+      {
+        "chunk_id": "617c82d049b7afd3419a440a82917e1b",
+        "doc_version": "2026-06",
+        "source": "academic-rules-2026.md",
+        "superseded": false,
+        "section": "Margalla Institute of Technology: Academic Rules (2026 edition)",
+        "page": 1
+      },
+      {
+        "chunk_id": "146517581974d15fefcd0efcaa270a7d",
+        "section": "2.1 2. Academic warning",
+        "source": "academic-rules-2026.md",
+        "page": 1,
+        "superseded": false,
+        "doc_version": "2026-06"
+      },
+      {
+        "chunk_id": "47ffe267a2a8e7dd35694b60846d734b",
+        "superseded": false,
+        "section": "2.2 2. Academic warning",
+        "source": "academic-rules-2026.md",
+        "page": 1,
+        "doc_version": "2026-06"
+      },
+      {
+        "chunk_id": "1042b2355f0cc6bc5aee6bce55200537",
+        "section": "3.1 3. Repeating a course",
+        "doc_version": "2026-06",
+        "page": 1,
+        "source": "academic-rules-2026.md",
+        "superseded": false
+      },
+      {
+        "chunk_id": "cdafdb357dfdba21153c00ef5e149283",
+        "section": "1. Tuition",
+        "doc_version": "2026",
+        "source": "fees-2026.md",
+        "page": 1,
+        "superseded": false
+      },
+      {
+        "chunk_id": "40be5555c0f17e739e5d2e9ce4e68881",
+        "page": 1,
+        "superseded": false,
+        "source": "fees-2026.md",
+        "section": "2. Other charges",
+        "doc_version": "2026"
+      },
+      {
+        "chunk_id": "c94025025d33423e51e9232cd19d88d4",
+        "source": "fees-2026.md",
+        "superseded": false,
+        "section": "3.1 3. Refunds",
+        "page": 1,
+        "doc_version": "2026"
+      }
+    ],
+    "superseded_hits": 0
+  },
+  "without_version_filter": {
+    "hits": [
+      {
+        "chunk_id": "5c7783490044a4675654ee275d7ba84c",
+        "superseded": true,
+        "doc_version": "2023-08",
+        "section": "1.1 1. Attendance",
+        "source": "academic-rules-2023.md",
+        "page": 1
+      },
+      {
+        "chunk_id": "03383e8be252ba037eeb4bb8d38ecd97",
+        "section": "1.1 1. Attendance",
+        "doc_version": "2026-06",
+        "source": "academic-rules-2026.md",
+        "superseded": false,
+        "page": 1
+      },
+      {
+        "chunk_id": "56b82342f837de5a218d9a62e99ea073",
+        "superseded": true,
+        "section": "1.2 1. Attendance",
+        "page": 1,
+        "doc_version": "2023-08",
+        "source": "academic-rules-2023.md"
+      },
+      {
+        "chunk_id": "e207275b9e8f72428268ca6b6fbab45c",
+        "section": "1.2 1. Attendance",
+        "source": "academic-rules-2026.md",
+        "superseded": false,
+        "page": 1,
+        "doc_version": "2026-06"
+      },
+      {
+        "chunk_id": "eac93c6e8ea4dd8b256703881c641774",
+        "page": 1,
+        "section": "3.2 3. Repeating a course",
+        "source": "academic-rules-2026.md",
+        "doc_version": "2026-06",
+        "superseded": false
+      },
+      {
+        "chunk_id": "2160d0374a05beda562c548bb0d22f0b",
+        "doc_version": "2023-08",
+        "page": 1,
+        "section": "Margalla Institute of Technology: Academic Rules (2023 edition)",
+        "superseded": true,
+        "source": "academic-rules-2023.md"
+      },
+      {
+        "chunk_id": "617c82d049b7afd3419a440a82917e1b",
+        "section": "Margalla Institute of Technology: Academic Rules (2026 edition)",
+        "source": "academic-rules-2026.md",
+        "doc_version": "2026-06",
+        "page": 1,
+        "superseded": false
+      },
+      {
+        "chunk_id": "1042b2355f0cc6bc5aee6bce55200537",
+        "section": "3.1 3. Repeating a course",
+        "source": "academic-rules-2026.md",
+        "page": 1,
+        "superseded": false,
+        "doc_version": "2026-06"
+      },
+      {
+        "chunk_id": "40be5555c0f17e739e5d2e9ce4e68881",
+        "page": 1,
+        "section": "2. Other charges",
+        "doc_version": "2026",
+        "source": "fees-2026.md",
+        "superseded": false
+      },
+      {
+        "chunk_id": "c94025025d33423e51e9232cd19d88d4",
+        "section": "3.1 3. Refunds",
+        "doc_version": "2026",
+        "superseded": false,
+        "page": 1,
+        "source": "fees-2026.md"
+      }
+    ],
+    "superseded_hits": 3
+  },
+  "remedy": "Keep the superseded filter and scope explicit historical questions by edition."
+}

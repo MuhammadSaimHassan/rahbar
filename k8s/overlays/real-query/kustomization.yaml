@@ -1,0 +1,24 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../real-indexer
+  - api-ollama-egress.yaml
+patches:
+  - target:
+      kind: ConfigMap
+      name: rahbar-config
+    patch: |-
+      - op: replace
+        path: /data/RETRIEVER
+        value: chroma
+      - op: replace
+        path: /data/LLM_PROVIDER
+        value: ollama-host
+  - target:
+      kind: Ingress
+      name: rahbar
+    patch: |-
+      - op: add
+        path: /metadata/annotations
+        value:
+          nginx.ingress.kubernetes.io/proxy-read-timeout: "300"
