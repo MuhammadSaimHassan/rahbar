@@ -1,0 +1,817 @@
+{
+  "passed": true,
+  "context": "rahbar-real-42500255265-1",
+  "traffic": [
+    {
+      "ok": true,
+      "seconds": 0.15,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.121,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.143,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.139,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.135,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.127,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.16,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.149,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.145,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.127,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.141,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.126,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.133,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.17,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.151,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.149,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.151,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.131,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.133,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.113,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.154,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.144,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.145,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.13,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.124,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.149,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.144,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.12,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.133,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.142,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.136,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.143,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.138,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.145,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.133,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.274,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 2.426,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.451,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.621,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.457,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.446,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.854,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.454,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.266,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.828,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.409,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.511,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.858,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.766,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.819,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.929,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 6.965,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 3.995,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 8.917,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 4.985,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 8.38,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 4.288,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 8.805,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 8.408,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 8.486,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 8.405,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 7.051,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 7.919,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 6.309,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 5.258,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 8.066,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 10.826,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 2.814,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.559,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 3.054,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.611,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.469,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 2.761,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 4.154,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 2.771,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.881,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 2.496,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.522,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 3.051,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 2.666,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 1.847,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 2.568,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.932,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 2.737,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 2.887,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 2.607,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.148,
+      "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 18.278,
+      "generation": "d1b524ca223a4ea89f3731d70c3172b8",
+      "cache": "MISS",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.185,
+      "generation": "d1b524ca223a4ea89f3731d70c3172b8",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.189,
+      "generation": "d1b524ca223a4ea89f3731d70c3172b8",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.184,
+      "generation": "d1b524ca223a4ea89f3731d70c3172b8",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.161,
+      "generation": "d1b524ca223a4ea89f3731d70c3172b8",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.187,
+      "generation": "d1b524ca223a4ea89f3731d70c3172b8",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.182,
+      "generation": "d1b524ca223a4ea89f3731d70c3172b8",
+      "cache": "HIT",
+      "status": 200
+    },
+    {
+      "ok": true,
+      "seconds": 0.187,
+      "generation": "d1b524ca223a4ea89f3731d70c3172b8",
+      "cache": "HIT",
+      "status": 200
+    }
+  ],
+  "network_policy": {
+    "api_positive_control": {
+      "status": 200
+    },
+    "ui_local_control": 0,
+    "ui_to_chroma_returncode": 1,
+    "ui_to_chroma_output": "wget: download timed out\ncommand terminated with exit code 1\n"
+  },
+  "pvc_persistence": {
+    "before": {
+      "catalog": {
+        "collection": "rahbar-v-dc2cc911facc4e408a05e3bfa2de0337",
+        "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+        "embed_model": "nomic-embed-text",
+        "dimension": 768,
+        "chunk_count": 950
+      },
+      "count": 950,
+      "metadata": {
+        "chunk_size": 400,
+        "chunk_count": 950,
+        "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+        "dimension": 768,
+        "chunk_overlap": 50,
+        "logical_collection": "rahbar",
+        "hnsw:space": "cosine",
+        "token_unit": "lexical-v1",
+        "embed_model": "nomic-embed-text",
+        "chunks_sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "cache_keys": [
+        "rahbar:cache:rahbar:dc2cc911facc4e408a05e3bfa2de0337:v1:5ee6ea9d879d16c4620ef6026be033b54bcbfd7677036e325a925ff6024df526"
+      ]
+    },
+    "after": {
+      "catalog": {
+        "collection": "rahbar-v-dc2cc911facc4e408a05e3bfa2de0337",
+        "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+        "embed_model": "nomic-embed-text",
+        "dimension": 768,
+        "chunk_count": 950
+      },
+      "count": 950,
+      "metadata": {
+        "logical_collection": "rahbar",
+        "chunk_overlap": 50,
+        "chunk_size": 400,
+        "dimension": 768,
+        "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+        "token_unit": "lexical-v1",
+        "embed_model": "nomic-embed-text",
+        "chunks_sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845",
+        "chunk_count": 950,
+        "hnsw:space": "cosine"
+      },
+      "cache_keys": [
+        "rahbar:cache:rahbar:dc2cc911facc4e408a05e3bfa2de0337:v1:5ee6ea9d879d16c4620ef6026be033b54bcbfd7677036e325a925ff6024df526"
+      ]
+    },
+    "pvc_uid": "e6441c49-4e53-472f-a444-da7842e1fc44",
+    "old_pod_uid": "b45df4fa-7de7-49a3-a852-611ab5c705f5",
+    "new_pod_uid": "93760585-05b4-4e75-9ea3-de063a192e93"
+  },
+  "pin_probe": {
+    "live": 200,
+    "ready": 503,
+    "checks": {
+      "redis": "ok",
+      "embedding_pin": "mismatch: API model=wrong-model-for-pin-probe, dimension=768; collection model=nomic-embed-text, dimension=768",
+      "index_catalog": "ok",
+      "chroma": "ok"
+    }
+  },
+  "pin_probe_logs": "INFO:     Started server process [1]\nINFO:     Waiting for application startup.\n{\"ts\": \"2026-11-08T16:43:59Z\", \"level\": \"INFO\", \"logger\": \"httpx\", \"msg\": \"HTTP Request: GET http://chroma:8000/api/v2/tenants/default_tenant/databases/default_database/collections/rahbar-v-dc2cc911facc4e408a05e3bfa2de0337 \\\"HTTP/1.1 200 OK\\\"\", \"request_id\": \"-\"}\n{\"ts\": \"2026-11-08T16:43:59Z\", \"level\": \"INFO\", \"logger\": \"httpx\", \"msg\": \"HTTP Request: GET http://chroma:8000/api/v2/tenants/default_tenant/databases/default_database/collections/b9a983e7-2d65-401c-874c-3fc833f407e9/count \\\"HTTP/1.1 200 OK\\\"\", \"request_id\": \"-\"}\n{\"ts\": \"2026-11-08T16:43:59Z\", \"level\": \"WARNING\", \"logger\": \"rahbar.api.health\", \"msg\": \"dependencies not ready\", \"request_id\": \"-\", \"checks\": {\"redis\": \"ok\", \"embedding_pin\": \"mismatch: API model=wrong-model-for-pin-probe, dimension=768; collection model=nomic-embed-text, dimension=768\", \"index_catalog\": \"ok\", \"chroma\": \"ok\"}}\n{\"ts\": \"2026-11-08T16:43:59Z\", \"level\": \"INFO\", \"logger\": \"rahbar.api\", \"msg\": \"api started\", \"request_id\": \"-\", \"retriever\": \"chroma\", \"llm_provider\": \"ollama-host\", \"embed_model\": \"wrong-model-for-pin-probe\", \"top_k\": 5}\nINFO:     Application startup complete.\nINFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)\n{\"ts\": \"2026-11-08T16:44:01Z\", \"level\": \"INFO\", \"logger\": \"httpx\", \"msg\": \"HTTP Request: GET http://chroma:8000/api/v2/tenants/default_tenant/databases/default_database/collections/rahbar-v-dc2cc911facc4e408a05e3bfa2de0337 \\\"HTTP/1.1 200 OK\\\"\", \"request_id\": \"1be379778cb943819124835bcf6b53ff\"}\n{\"ts\": \"2026-11-08T16:44:01Z\", \"level\": \"INFO\", \"logger\": \"httpx\", \"msg\": \"HTTP Request: GET http://chroma:8000/api/v2/tenants/default_tenant/databases/default_database/collections/b9a983e7-2d65-401c-874c-3fc833f407e9/count \\\"HTTP/1.1 200 OK\\\"\", \"request_id\": \"1be379778cb943819124835bcf6b53ff\"}\n{\"ts\": \"2026-11-08T16:44:01Z\", \"level\": \"INFO\", \"logger\": \"httpx\", \"msg\": \"HTTP Request: GET http://chroma:8000/api/v2/tenants/default_tenant/databases/default_database/collections/rahbar-v-dc2cc911facc4e408a05e3bfa2de0337 \\\"HTTP/1.1 200 OK\\\"\", \"request_id\": \"f784406ec7734c7faa4801c9d8c0f3de\"}\n{\"ts\": \"2026-11-08T16:44:01Z\", \"level\": \"INFO\", \"logger\": \"httpx\", \"msg\": \"HTTP Request: GET http://chroma:8000/api/v2/tenants/default_tenant/databases/default_database/collections/b9a983e7-2d65-401c-874c-3fc833f407e9/count \\\"HTTP/1.1 200 OK\\\"\", \"request_id\": \"f784406ec7734c7faa4801c9d8c0f3de\"}\n",
+  "before_reindex_answer": {
+    "ok": true,
+    "seconds": 0.142,
+    "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+    "cache": "HIT",
+    "status": 200
+  },
+  "after_reindex_answer": {
+    "ok": true,
+    "seconds": 31.689,
+    "generation": "d1b524ca223a4ea89f3731d70c3172b8",
+    "cache": "MISS",
+    "status": 200
+  },
+  "reindex": {
+    "before": {
+      "catalog": {
+        "collection": "rahbar-v-dc2cc911facc4e408a05e3bfa2de0337",
+        "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+        "embed_model": "nomic-embed-text",
+        "dimension": 768,
+        "chunk_count": 950
+      },
+      "count": 950,
+      "metadata": {
+        "hnsw:space": "cosine",
+        "dimension": 768,
+        "generation": "dc2cc911facc4e408a05e3bfa2de0337",
+        "chunk_count": 950,
+        "logical_collection": "rahbar",
+        "chunks_sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845",
+        "chunk_overlap": 50,
+        "token_unit": "lexical-v1",
+        "embed_model": "nomic-embed-text",
+        "chunk_size": 400
+      },
+      "cache_keys": [
+        "rahbar:cache:rahbar:dc2cc911facc4e408a05e3bfa2de0337:v1:5ee6ea9d879d16c4620ef6026be033b54bcbfd7677036e325a925ff6024df526"
+      ]
+    },
+    "after": {
+      "catalog": {
+        "collection": "rahbar-v-d1b524ca223a4ea89f3731d70c3172b8",
+        "generation": "d1b524ca223a4ea89f3731d70c3172b8",
+        "embed_model": "nomic-embed-text",
+        "dimension": 768,
+        "chunk_count": 950
+      },
+      "count": 950,
+      "metadata": {
+        "chunk_count": 950,
+        "chunks_sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845",
+        "dimension": 768,
+        "hnsw:space": "cosine",
+        "logical_collection": "rahbar",
+        "token_unit": "lexical-v1",
+        "embed_model": "nomic-embed-text",
+        "generation": "d1b524ca223a4ea89f3731d70c3172b8",
+        "chunk_size": 400,
+        "chunk_overlap": 50
+      },
+      "cache_keys": []
+    },
+    "job": "real-reindex",
+    "traffic_kind": "warmed supported question; publication may cause a miss"
+  },
+  "reindex_logs": "{\"ts\": \"2026-11-08T16:44:21Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"indexer starting\", \"dummy\": false, \"embed_model\": \"nomic-embed-text\", \"collection\": \"rahbar\", \"chroma\": \"chroma:8000\", \"pod\": \"real-reindex-9zr7m\"}\n{\"ts\": \"2026-11-08T16:44:21Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"extracting\", \"source\": \"undergraduate-academic-rules-aug-2023.pdf\"}\n{\"ts\": \"2026-11-08T16:45:05Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"chunked\", \"source\": \"undergraduate-academic-rules-aug-2023.pdf\", \"chunks\": 127}\n{\"ts\": \"2026-11-08T16:45:05Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"extracting\", \"source\": \"academic-rules-handbook-jun-2026.pdf\"}\n{\"ts\": \"2026-11-08T16:45:10Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"chunked\", \"source\": \"academic-rules-handbook-jun-2026.pdf\", \"chunks\": 291}\n{\"ts\": \"2026-11-08T16:45:10Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"extracting\", \"source\": \"prospectus-2026-academic-rules-and-regulations.pdf\"}\n{\"ts\": \"2026-11-08T16:45:11Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"chunked\", \"source\": \"prospectus-2026-academic-rules-and-regulations.pdf\", \"chunks\": 15}\n{\"ts\": \"2026-11-08T16:45:11Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"extracting\", \"source\": \"student-handbook-jun-2026.pdf\"}\n{\"ts\": \"2026-11-08T16:45:17Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"chunked\", \"source\": \"student-handbook-jun-2026.pdf\", \"chunks\": 122}\n{\"ts\": \"2026-11-08T16:45:17Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"extracting\", \"source\": \"annual-report-2019-20.pdf\"}\n{\"ts\": \"2026-11-08T16:45:20Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"chunked\", \"source\": \"annual-report-2019-20.pdf\", \"chunks\": 44}\n{\"ts\": \"2026-11-08T16:45:20Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"extracting\", \"source\": \"annual-report-2023-24.pdf\"}\n{\"ts\": \"2026-11-08T16:45:27Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"chunked\", \"source\": \"annual-report-2023-24.pdf\", \"chunks\": 314}\n{\"ts\": \"2026-11-08T16:45:27Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"extracting\", \"source\": \"fee-structure-page.html\"}\n{\"ts\": \"2026-11-08T16:45:27Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"chunked\", \"source\": \"fee-structure-page.html\", \"chunks\": 8}\n{\"ts\": \"2026-11-08T16:45:27Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"extracting\", \"source\": \"grading-page.html\"}\n{\"ts\": \"2026-11-08T16:45:27Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"chunked\", \"source\": \"grading-page.html\", \"chunks\": 8}\n{\"ts\": \"2026-11-08T16:45:27Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"extracting\", \"source\": \"faculty-entrepreneurship-and-technical-start-ups-policy.pdf\"}\n{\"ts\": \"2026-11-08T16:45:34Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"chunked\", \"source\": \"faculty-entrepreneurship-and-technical-start-ups-policy.pdf\", \"chunks\": 21}\n{\"ts\": \"2026-11-08T16:50:20Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"pipeline summary\", \"chunks\": 950, \"dry_run\": false, \"storage_amplification\": 1.0474}\n{\"ts\": \"2026-11-08T16:50:20Z\", \"logger\": \"rahbar.indexer\", \"msg\": \"indexer finished\", \"chunks\": 950, \"seconds\": 359.7}\n",
+  "verification": {
+    "run_url": "https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42500255265",
+    "source_head": "fb8dcdd",
+    "overall_workflow_passed": false
+  }
+}
