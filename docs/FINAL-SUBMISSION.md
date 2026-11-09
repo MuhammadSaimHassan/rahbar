@@ -53,15 +53,14 @@ SHA: 6683ba647b317586bb5400d8e3754a71fe8c41a2. Matching tags were verified for a
 three repositories. Replace these with the final release's matching values after
 its CD succeeds.
 
-Team review remains necessary: understand the code/ADRs and AI disclosure, provide
-a truthful personal debugging account where required, and capture the expanded
-main-protection settings screenshot. The ruleset API evidence verifies the saved
+Review the code, ADRs, AI disclosure and the timed HPA acceptance cycle in
+Engineering Notes answer 7. Capture the expanded main-protection settings screenshot. The ruleset API evidence verifies the saved
 settings but is not a browser screenshot. Credentials must remain out of evidence.
 
 ## Unchanged checker interpretation
 
 Run python scripts/check_submission.py from the final source root. The current
-snapshot reports 162 passes, 5 warnings and 2 failures. Both failures treat FROM
+snapshot reports 163 passes, 4 warnings and 2 failures. Both failures treat FROM
 runtime as an external unpinned base; in indexer/Dockerfile, runtime is a named
 stage derived from python:3.12.16-slim-bookworm. It is valid multistage inheritance.
 The checker was not changed or disabled. The image build/scan and real Job provide

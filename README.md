@@ -227,9 +227,7 @@ and twelve fallbacks. No overall answer-quality improvement is claimed. Current 
 results, unchanged baseline and old outputs are committed; see the
 [per-question review](docs/REAL-MODEL-EVALUATION.md).
 
-Real Calico denial/controls, PVC recovery, live pin mismatch and reindex continuity
-passed in run 42500255265. That workflow failed its final HPA numeric-reading check;
-a corrected follow-up is still running. See [real operations](docs/REAL-RUNTIME-OPERATIONS.md).
+Real run 42502474968 passed Calico denial with positive controls, PVC recovery, live pin mismatch, and real reindexing (119 successful traffic samples). Rollout, rollback and Pod replacement passed 342 traffic samples. The restored HPA reported 53% CPU against a 70% target. See [real operations](docs/REAL-RUNTIME-OPERATIONS.md) for the test scope.
 
 ## Documentation
 

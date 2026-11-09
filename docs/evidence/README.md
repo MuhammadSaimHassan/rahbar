@@ -61,7 +61,9 @@ the pending real-corpus acceptance or expanded browser screenshot.
   historical are superseded.
 - real-runtime-first-core.json: successful Calico/PVC/pin/reindex subtests from an
   overall failed workflow; real-rollout-first-metrics-failure.json retains that
-  workflow's HPA failure despite zero sampled traffic failures. Follow-up pending.
+  workflow's HPA failure despite zero sampled traffic failures. Run 42502474968
+  passed all checks. See real-runtime-verification.json, real-hpa.txt,
+  real-top-pods.txt and the full operations and rollout JSON reports.
 - latest-verified-release.json: existing main release 6683ba6, its successful CD
   jobs and three matching Docker tag digests. This predates final feature merges.
 - final-protection-verification.json, final-gitleaks-history.json,

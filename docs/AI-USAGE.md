@@ -43,3 +43,7 @@ answer facts, and documented the actual low answer coverage and conditional-rule
 error. Those semantic judgments are AI-assisted and require team review. It also
 formatted equivalent resource/security YAML, made CI/CD step names explicit and
 ran the unchanged checker/Gitleaks. No personal debugging duration was invented.
+
+Engineering answer 7 uses exact GitHub timestamps for the AI-assisted HPA
+acceptance cycle. The measured 1 hour 25 seconds includes setup, indexing,
+inference, tests and waiting.

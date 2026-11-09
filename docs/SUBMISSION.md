@@ -17,20 +17,20 @@ not mean the newer changes are already released on main.
 | Production indexer memory | Measured cgroup peak 188.43 MiB against unchanged 1 GiB limit; highest kubectl top sample 151 MiB. Parent RSS is separately reported. |
 | Revised real-model benchmark | Completed run 42499897552. Recall@5 88.9%, all 8 emitted citations valid, required abstentions 2/2. Six of 18 answerable questions answered, five complete and one incorrect; twelve fallbacks. Baseline unchanged and old output retained. Team review required; no overall quality improvement claimed. |
 | Real core operations | Run 42500255265 passed enforced Calico denial with positive controls, PVC recovery, explicit live embedding-pin mismatch and real same-pin reindex continuity (95/95 requests). |
-| Real rollout/HPA follow-up | Same run had 337/337 successful rollout/rollback/replacement requests and restored settings, but failed HPA metrics readiness. Corrected run is pending; not yet a complete green operations workflow. |
+| Complete real operations | Run 42502474968 passed all checks. It recorded 119 successful reindex samples, 342 successful rollout/rollback/replacement samples and HPA CPU at 53% against 70%, with 3–8 replica bounds restored. The earlier failed run is retained. |
 | Secret scan | Gitleaks found zero findings in the captured history/source snapshots. Repeat after the final evidence updates; never commit credentials, raw source PDFs or kubeconfigs. |
-| Unchanged checker | Readable resource mappings, explicit build exclusions and accurate workflow step names reduce historical heuristic failures. Latest recorded audit: 162 passes, 5 warnings, 2 named-stage false positives. See FINAL-SUBMISSION.md and evidence/final-submission-audit.log. Rerun after final integration. |
+| Unchanged checker | Readable resource mappings, explicit build exclusions and accurate workflow step names reduce historical heuristic failures. Latest recorded audit: 163 passes, 4 warnings, 2 named-stage false positives. See FINAL-SUBMISSION.md and evidence/final-submission-audit.log. Rerun after final integration. |
 
 ## Remaining before hand-in
 
-- Finish/review the HPA operational follow-up, then finalize engineering interpretation.
+- Review the real acceptance, benchmark and operational results before integrating the approved PRs.
 - Hassan reviews feature PRs; merge green changes into dev in order, then approve and
   merge the final dev-to-main PR. The existing cd.yml runs automatically on that merge.
 - Confirm test, build-push and deploy all pass for the selected final main SHA; use
   matching image tags and the run link. Older successful releases remain historical.
-- The team supplies a truthful personal debugging incident/duration for engineering
-  answer 7, reviews the source/ADRs/AI attribution and captures the expanded protection
-  screenshot. No first-person experience or unrecorded duration has been invented.
+- Review the source, ADRs and AI attribution. Capture the expanded protection screenshot.
+  Engineering answer 7 documents the timed AI-assisted HPA acceptance cycle,
+  including setup, execution and waiting.
 - Submit one team Classroom entry before 23:59 PKT: repository URL with instructor
   access, successful CD URL, three matching Docker Hub SHA-tag links, and committed
   eval/results.json plus eval/baseline.json. See FINAL-SUBMISSION.md.
