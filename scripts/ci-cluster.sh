@@ -42,7 +42,7 @@ k3d cluster create "$cluster" --image rancher/k3s:v1.35.5-k3s1 \
 k3d kubeconfig get "$cluster" > "$KUBECONFIG"
 # Stream into the single fixture node so a failed import stops the job.
 docker save "${images[@]}" | docker exec -i "k3d-$cluster-server-0" \
-  k3s ctr --namespace k8s.io images import -
+  ctr --address /run/k3s/containerd/containerd.sock --namespace k8s.io images import -
 
 # Replace only the three application image references in the rendered overlay.
 kubectl kustomize k8s/overlays/ci > "$work/fixture.yaml"
