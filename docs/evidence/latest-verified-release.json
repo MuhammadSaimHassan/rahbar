@@ -1,0 +1,46 @@
+{
+  "captured_at_utc": "2026-11-08T16:42:57.002322+00:00",
+  "scope": "Existing main release before remaining feature merges; fixture deployment, not real-model quality",
+  "run_url": "https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42494652854",
+  "sha": "6683ba647b317586bb5400d8e3754a71fe8c41a2",
+  "jobs": [
+    {
+      "name": "test",
+      "conclusion": "success",
+      "started_at": "2026-11-08T15:28:09Z",
+      "completed_at": "2026-11-08T15:28:59Z"
+    },
+    {
+      "name": "build-push",
+      "conclusion": "success",
+      "started_at": "2026-11-08T15:29:01Z",
+      "completed_at": "2026-11-08T15:30:35Z"
+    },
+    {
+      "name": "deploy",
+      "conclusion": "success",
+      "started_at": "2026-11-08T15:30:38Z",
+      "completed_at": "2026-11-08T15:32:38Z"
+    }
+  ],
+  "tags": [
+    {
+      "repository": "rahbar-api",
+      "sha_tag": "6683ba647b317586bb5400d8e3754a71fe8c41a2",
+      "digest": "sha256:842d090d37abc2d557c3ae0aaadd70a34ddd2511e09c3065e0e16780c8df08fd",
+      "url": "https://hub.docker.com/r/saimhassan005/rahbar-api/tags?name=6683ba647b317586bb5400d8e3754a71fe8c41a2"
+    },
+    {
+      "repository": "rahbar-ui",
+      "sha_tag": "6683ba647b317586bb5400d8e3754a71fe8c41a2",
+      "digest": "sha256:9519a15f195af0236f8f97f622e56e1a4bc7cf720c56c7decf9ed869c277993c",
+      "url": "https://hub.docker.com/r/saimhassan005/rahbar-ui/tags?name=6683ba647b317586bb5400d8e3754a71fe8c41a2"
+    },
+    {
+      "repository": "rahbar-indexer",
+      "sha_tag": "6683ba647b317586bb5400d8e3754a71fe8c41a2",
+      "digest": "sha256:ea523dac797aca197763af0e03c98f2bb1878e3ac7004227c77c2d7c8df6aa12",
+      "url": "https://hub.docker.com/r/saimhassan005/rahbar-indexer/tags?name=6683ba647b317586bb5400d8e3754a71fe8c41a2"
+    }
+  ]
+}

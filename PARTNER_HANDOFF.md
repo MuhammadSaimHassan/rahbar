@@ -1,5 +1,8 @@
 # RAHBAR — Partner Handoff and Completion Guide
 
+> Historical 7 November handoff. GitHub/CI/CD setup notes below are superseded by
+> [current submission status](docs/SUBMISSION.md) and [final delivery instructions](docs/FINAL-SUBMISSION.md).
+
 **Prepared:** 7 November 2026  
 **Repository:** https://github.com/MuhammadSaimHassan/rahbar  
 **Deadline stated in the assignment:** 8 November 2026, 23:59 PKT

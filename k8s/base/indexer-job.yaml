@@ -27,12 +27,18 @@ spec:
           envFrom:
             - configMapRef: {name: rahbar-config}
           resources:
-            requests: {cpu: 250m, memory: 256Mi}
-            limits: {cpu: "2", memory: 1Gi}
+            requests:
+              cpu: 250m
+              memory: 256Mi
+            limits:
+              cpu: "2"
+              memory: 1Gi
           securityContext:
             allowPrivilegeEscalation: false
             readOnlyRootFilesystem: true
-            capabilities: {drop: [ALL]}
+            capabilities:
+              drop:
+                - ALL
           volumeMounts:
             - {name: tmp, mountPath: /tmp}
       volumes:

@@ -31,12 +31,18 @@ spec:
           ports:
             - {name: http, containerPort: 8000}
           resources:
-            requests: {cpu: 100m, memory: 256Mi}
-            limits: {cpu: "1", memory: 768Mi}
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: "1"
+              memory: 768Mi
           securityContext:
             allowPrivilegeEscalation: false
             readOnlyRootFilesystem: true
-            capabilities: {drop: [ALL]}
+            capabilities:
+              drop:
+                - ALL
           startupProbe:
             httpGet: {path: /api/v2/heartbeat, port: http}
             periodSeconds: 2
@@ -59,4 +65,5 @@ spec:
       spec:
         accessModes: [ReadWriteOnce]
         resources:
-          requests: {storage: 2Gi}
+          requests:
+            storage: 2Gi

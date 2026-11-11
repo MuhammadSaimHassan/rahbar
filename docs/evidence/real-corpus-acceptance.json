@@ -1,0 +1,2112 @@
+{
+  "passed": true,
+  "context": "rahbar-real-42498284513-1",
+  "api": "http://192.168.49.2",
+  "provider": "ollama",
+  "source": "fresh verified real corpus",
+  "requests_during_pod_replacement": [
+    {
+      "seconds": 0.129,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "7bfd91d6b1e200fb01976388c5ec144b",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.134,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "f77de82113ea7e8ef5bf29346f4f1f77",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.128,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "a2d87a6716215c3dcc45f7fbdb3e03e9",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.09,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "d81876f1e6d34829144f17103b13be61",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.097,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "d559ca900268c04669ddb12b8be59d7f",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.091,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "67eda08bdafa4de031267313e0e01a9e",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.106,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "09ee6716454f719dfb3b98aa5d886066",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.094,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "51a4eb503c8930cc62594d632e6b5127",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.097,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "8ddd230f5e7898fbf1293076de41a1c8",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.096,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "dcf9b80d430ed07b6b1fe82f8f4998b7",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.09,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "53913ec3d8a2c2044cd10b6ea7a10890",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.111,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "13ec7ea77dfb47fd17f8efdb8d10ec18",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.09,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "e7c4221feb86ab3b3e26f8c598b98d5a",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.088,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "0c2373c2904654a175fbcc77ac8cd470",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.098,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "a7f62ce979ff0bb6e023582178ac5fcf",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.103,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "f2bac0b0db079eed2caee445efea5eec",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.101,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "8752fee3acee083d82c707ece73c57bf",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.1,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "17dbc46a10b421f13145d5e1e358778f",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.096,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "535eb00624bc127a6faa875fb61ba09e",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.115,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "9198a101f1bbef0d7d2fde62282a3662",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.086,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "0fc4bac4facf5744b7f0568ff735c283",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.088,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "177ebaae8272e6dba17e42a609b26966",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.089,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "68f8ffc459221eb99afffdd01dd64f6c",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.091,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "f4fb5bc9bfedcfd34ebb824454d2618e",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.093,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "5c0741308523b7d5e4cbf5ed41ccbf36",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.091,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "636c0dbb95fa1c39ae5795acd78f18b8",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    },
+    {
+      "seconds": 0.107,
+      "http_status": 200,
+      "headers": {
+        "x-answer-outcome": "grounded",
+        "x-cache": "HIT",
+        "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+        "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+      },
+      "response": {
+        "request_id": "95684519622825118f75046a5f72ae92",
+        "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+        "citations": [
+          {
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24
+          }
+        ],
+        "answered_from_context": true,
+        "confidence": "high",
+        "retrieved": [
+          {
+            "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.84437221
+          },
+          {
+            "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.83376527
+          },
+          {
+            "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.80631703
+          },
+          {
+            "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+            "page": 25,
+            "score": 0.78226632
+          },
+          {
+            "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+            "source": "academic-rules-handbook-jun-2026.pdf",
+            "section": "5.5 Academic Warning/Probation",
+            "page": 24,
+            "score": 0.77580273
+          }
+        ],
+        "provider": "ollama"
+      },
+      "ok": true
+    }
+  ],
+  "indexer": {
+    "mode": "published",
+    "token_unit": "lexical-v1",
+    "embed_model": "nomic-embed-text",
+    "dimension": 768,
+    "chunk_size": 400,
+    "chunk_overlap": 50,
+    "documents": [
+      {
+        "source": "undergraduate-academic-rules-aug-2023.pdf",
+        "doc_version": "2023-08",
+        "superseded": true,
+        "pages": 26,
+        "ocr_pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "empty_pages": [
+          3
+        ],
+        "extracted_tokens": 6375,
+        "cleaned_tokens": 6283,
+        "chunks": 127
+      },
+      {
+        "source": "academic-rules-handbook-jun-2026.pdf",
+        "doc_version": "2026-06",
+        "superseded": false,
+        "pages": 58,
+        "ocr_pages": [
+          2,
+          56,
+          57,
+          58
+        ],
+        "empty_pages": [
+          2,
+          56,
+          57
+        ],
+        "extracted_tokens": 18736,
+        "cleaned_tokens": 18365,
+        "chunks": 291
+      },
+      {
+        "source": "prospectus-2026-academic-rules-and-regulations.pdf",
+        "doc_version": "2026",
+        "superseded": false,
+        "pages": 5,
+        "ocr_pages": [],
+        "empty_pages": [],
+        "extracted_tokens": 4247,
+        "cleaned_tokens": 4247,
+        "chunks": 15
+      },
+      {
+        "source": "student-handbook-jun-2026.pdf",
+        "doc_version": "2026-06",
+        "superseded": false,
+        "pages": 64,
+        "ocr_pages": [
+          1,
+          2,
+          63,
+          64
+        ],
+        "empty_pages": [
+          2,
+          63
+        ],
+        "extracted_tokens": 28119,
+        "cleaned_tokens": 27699,
+        "chunks": 122
+      },
+      {
+        "source": "annual-report-2019-20.pdf",
+        "doc_version": "2019-20",
+        "superseded": false,
+        "pages": 33,
+        "ocr_pages": [],
+        "empty_pages": [],
+        "extracted_tokens": 10298,
+        "cleaned_tokens": 10265,
+        "chunks": 44
+      },
+      {
+        "source": "annual-report-2023-24.pdf",
+        "doc_version": "2023-24",
+        "superseded": false,
+        "pages": 85,
+        "ocr_pages": [],
+        "empty_pages": [],
+        "extracted_tokens": 41317,
+        "cleaned_tokens": 40977,
+        "chunks": 314
+      },
+      {
+        "source": "fee-structure-page.html",
+        "doc_version": "snapshot-2026-11-04",
+        "superseded": false,
+        "pages": 1,
+        "ocr_pages": [],
+        "empty_pages": [],
+        "extracted_tokens": 834,
+        "cleaned_tokens": 834,
+        "chunks": 8
+      },
+      {
+        "source": "grading-page.html",
+        "doc_version": "snapshot-2026-11-04",
+        "superseded": false,
+        "pages": 1,
+        "ocr_pages": [],
+        "empty_pages": [],
+        "extracted_tokens": 1172,
+        "cleaned_tokens": 1172,
+        "chunks": 8
+      },
+      {
+        "source": "faculty-entrepreneurship-and-technical-start-ups-policy.pdf",
+        "doc_version": "2022-05",
+        "superseded": false,
+        "pages": 8,
+        "ocr_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "empty_pages": [],
+        "extracted_tokens": 2264,
+        "cleaned_tokens": 2232,
+        "chunks": 21
+      }
+    ],
+    "chunk_count": 950,
+    "extracted_tokens": 113362,
+    "cleaned_tokens": 112074,
+    "stored_tokens": 118733,
+    "storage_amplification": 1.0474,
+    "overlap_amplification": 1.0594,
+    "process_peak_rss_bytes": 195276800,
+    "whole_container_peak_bytes": 197578752,
+    "memory_limit_bytes": 1073741824
+  },
+  "ui_status": 200,
+  "supported_question": {
+    "seconds": 33.638,
+    "http_status": 200,
+    "headers": {
+      "x-answer-outcome": "grounded",
+      "x-cache": "MISS",
+      "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+      "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+    },
+    "response": {
+      "request_id": "cad0d89605ef0d7d37cd38a9ea6f7c62",
+      "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+      "citations": [
+        {
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.4 Academic Warning/Probation",
+          "page": 24
+        }
+      ],
+      "answered_from_context": true,
+      "confidence": "high",
+      "retrieved": [
+        {
+          "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.4 Academic Warning/Probation",
+          "page": 24,
+          "score": 0.84437221
+        },
+        {
+          "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+          "page": 25,
+          "score": 0.83376527
+        },
+        {
+          "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.6 Academic Warning/Probation",
+          "page": 24,
+          "score": 0.80631703
+        },
+        {
+          "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+          "page": 25,
+          "score": 0.78226632
+        },
+        {
+          "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.5 Academic Warning/Probation",
+          "page": 24,
+          "score": 0.77580273
+        }
+      ],
+      "provider": "ollama"
+    }
+  },
+  "absent_question": {
+    "seconds": 0.105,
+    "http_status": 200,
+    "headers": {
+      "x-answer-outcome": "abstained",
+      "x-cache": "BYPASS",
+      "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+      "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+    },
+    "response": {
+      "request_id": "c4c284ce55ce64f2f6ef04e9d01b6c7f",
+      "answer": "The retrieved university sources do not cover this question.",
+      "citations": [],
+      "answered_from_context": false,
+      "confidence": "low",
+      "retrieved": [
+        {
+          "chunk_id": "4a901ed337996c0679a49c8c9fc52c9e",
+          "source": "annual-report-2019-20.pdf",
+          "section": "FOR THE YEAR 2019-2020",
+          "page": 7,
+          "score": 0.6619587
+        },
+        {
+          "chunk_id": "aa106e437d7ae7cf8717fa39a0c413ee",
+          "source": "annual-report-2023-24.pdf",
+          "section": "Islamabad Campus",
+          "page": 78,
+          "score": 0.6608541
+        },
+        {
+          "chunk_id": "3e6240e9597c4f45f0bc22cc7205c1b2",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "Islamabad",
+          "page": 3,
+          "score": 0.6579245300000001
+        },
+        {
+          "chunk_id": "bf1a4031eae728a7b28e94ed305ccd2b",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "Loonaywala Stop",
+          "page": 58,
+          "score": 0.65593195
+        },
+        {
+          "chunk_id": "84e06417496e14e8da3dad2ca446d1ed",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "of Computer & Emerging Sciences",
+          "page": 58,
+          "score": 0.65325844
+        }
+      ],
+      "provider": "ollama"
+    }
+  },
+  "warm_supported_question": {
+    "seconds": 0.098,
+    "http_status": 200,
+    "headers": {
+      "x-answer-outcome": "grounded",
+      "x-cache": "HIT",
+      "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+      "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+    },
+    "response": {
+      "request_id": "46493bfc5803eb9b0d7512e37c35f3a6",
+      "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+      "citations": [
+        {
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.4 Academic Warning/Probation",
+          "page": 24
+        }
+      ],
+      "answered_from_context": true,
+      "confidence": "high",
+      "retrieved": [
+        {
+          "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.4 Academic Warning/Probation",
+          "page": 24,
+          "score": 0.84437221
+        },
+        {
+          "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+          "page": 25,
+          "score": 0.83376527
+        },
+        {
+          "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.6 Academic Warning/Probation",
+          "page": 24,
+          "score": 0.80631703
+        },
+        {
+          "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+          "page": 25,
+          "score": 0.78226632
+        },
+        {
+          "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.5 Academic Warning/Probation",
+          "page": 24,
+          "score": 0.77580273
+        }
+      ],
+      "provider": "ollama"
+    }
+  },
+  "ready_endpoint_addresses": [
+    "10.244.118.199",
+    "10.244.118.200",
+    "10.244.118.201"
+  ],
+  "deleted_pod_uid": "a7d77e6b-dbdf-4d46-a9dd-f27ef5a6b8ae",
+  "replacement_ready_pods": [
+    "api-948594c5d-h6zpp",
+    "api-948594c5d-l2pv2",
+    "api-948594c5d-l8c5r"
+  ],
+  "after_pod_replacement": {
+    "seconds": 0.095,
+    "http_status": 200,
+    "headers": {
+      "x-answer-outcome": "grounded",
+      "x-cache": "HIT",
+      "x-index-generation": "c31349a503ac4b59a6fa05dc6636e3fc",
+      "x-index-chunks-sha256": "88f13324203bc78231a57605ac79044d3b68bdc0d8fbc77758413fd2d3d2f845"
+    },
+    "response": {
+      "request_id": "8ea4d575c2a08cd0e95030a1b4e5d2c3",
+      "answer": "The minimum CGPA required to avoid academic warning is 2.00 for all undergraduate programs. [academic-rules-handbook-jun-2026.pdf / 5.4 Academic Warning/Probation]",
+      "citations": [
+        {
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.4 Academic Warning/Probation",
+          "page": 24
+        }
+      ],
+      "answered_from_context": true,
+      "confidence": "high",
+      "retrieved": [
+        {
+          "chunk_id": "ce82ff8a7ad460e2144814a755d0fae2",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.4 Academic Warning/Probation",
+          "page": 24,
+          "score": 0.84437221
+        },
+        {
+          "chunk_id": "40070b386a49f1180e93e8f8a23ee7cd",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.4 Academic Warning/Probation used for CGPA calculation.",
+          "page": 25,
+          "score": 0.83376527
+        },
+        {
+          "chunk_id": "1ac741006de2d2f3c92698c1f8c27f10",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.6 Academic Warning/Probation",
+          "page": 24,
+          "score": 0.80631703
+        },
+        {
+          "chunk_id": "acded4533508ff4fee51cb979c7c22d3",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.6 Academic Warning/Probation used for CGPA calculation.",
+          "page": 25,
+          "score": 0.78226632
+        },
+        {
+          "chunk_id": "1bbc4ee2fe0403a02c2b36cfaf2aa624",
+          "source": "academic-rules-handbook-jun-2026.pdf",
+          "section": "5.5 Academic Warning/Probation",
+          "page": 24,
+          "score": 0.77580273
+        }
+      ],
+      "provider": "ollama"
+    }
+  },
+  "verification": {
+    "run_url": "https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42498284513",
+    "head_sha": "9339fbd2392c1336bc3b9a14c36a7bb9a20ac884",
+    "tested_checkout_sha": "bee627163f591e438e8f9270abe279f5f0efae95",
+    "artifact_id": 13623764844,
+    "artifact_retention_days": 7,
+    "review": "Supported CGPA 2.00 with current policy page 24 citation; absent shuttle timetable declined. Finite warmed cached traffic only, not uncached generation load or full golden benchmark."
+  }
+}

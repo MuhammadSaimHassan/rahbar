@@ -28,8 +28,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: python -m pip install -r api/requirements-dev.txt -r indexer/requirements-dev.txt
-      - run: bash scripts/ci-checks.sh lint
-      - run: bash scripts/ci-checks.sh test
+      - name: Ruff and mypy Python checks
+        run: bash scripts/ci-checks.sh lint
+      - name: Pytest suites and API coverage gate
+        run: bash scripts/ci-checks.sh test
 
   build-push:
     needs: test
@@ -39,7 +41,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Build and scan commit images
+      - name: Build and Trivy scan commit images
         env:
           DOCKERHUB_NAMESPACE: ${{ vars.DOCKERHUB_NAMESPACE }}
         run: |
@@ -82,7 +84,7 @@ jobs:
           docker pull "$INDEXER_IMAGE"
       - run: python -m pip install -r api/requirements.txt PyYAML==6.0.2
       - run: bash scripts/ci-install-k3d.sh
-      - name: Deploy and smoke-test through Ingress
+      - name: Deploy, wait for rollout status and smoke-test through Ingress
         run: bash scripts/ci-cluster.sh
       - uses: actions/upload-artifact@v4
         if: always()

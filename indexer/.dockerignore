@@ -5,3 +5,9 @@
 !pipeline/**
 **/__pycache__/
 **/*.pyc
+
+# Explicit exclusions also document the deny rules in this allowlist context.
+.git/
+__pycache__/
+.venv/
+corpus/

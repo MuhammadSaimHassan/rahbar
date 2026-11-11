@@ -3,7 +3,7 @@ set -euo pipefail
 
 case "${1:?usage: ci-checks.sh lint|test}" in
   lint)
-    python -m ruff check api indexer eval corpus scripts/check_fixture_answers.py scripts/operational_demo.py
+    python -m ruff check api indexer eval corpus scripts/check_fixture_answers.py scripts/operational_demo.py scripts/check_real_acceptance.py scripts/check_real_operations.py
     (cd api && python -m mypy app)
     (cd indexer && python -m mypy pipeline)
     ;;
