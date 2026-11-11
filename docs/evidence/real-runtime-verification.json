@@ -1,0 +1,13 @@
+{
+  "run_url": "https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42502474968",
+  "source_head": "4d961e9e170adbd6c94a04ef0f7d043e71e124c4",
+  "tested_checkout_sha": "a740fc0f395d0d398c0c3ab4ebe44494638f8074",
+  "passed": true,
+  "reindex_samples": 119,
+  "reindex_failures": 0,
+  "rollout_samples": 342,
+  "rollout_failures": 0,
+  "hpa": "NAME   REFERENCE        TARGETS        MINPODS   MAXPODS   REPLICAS   AGE\napi    Deployment/api   cpu: 53%/70%   3         8         3          27m\n",
+  "restore_errors": [],
+  "scope": "Fresh genuine-model corpus; finite grounded traffic during real reindex and finite warmed traffic during same-content-reference rollout/rollback. Not an uncached load SLA or cross-version compatibility test."
+}

@@ -21,6 +21,8 @@ cleanup() {
   if [[ "$cluster_owned" == true ]]; then
     kubectl --context "$profile" -n rahbar get pods,svc,ingress,hpa,pvc -o wide > "$report/cluster-final.txt" 2>&1
     kubectl --context "$profile" -n rahbar describe pods > "$report/pod-diagnostics.txt" 2>&1
+    kubectl --context "$profile" -n rahbar describe hpa > "$report/hpa-diagnostics.txt" 2>&1
+    kubectl --context "$profile" -n kube-system logs -l component=kube-controller-manager --tail=150 > "$report/controller-diagnostics.txt" 2>&1
     kubectl --context "$profile" -n rahbar logs job/indexer > "$report/indexer.log" 2>&1
     kubectl --context "$profile" -n rahbar logs deployment/api --tail=150 > "$report/api.log" 2>&1
     minikube -p "$profile" delete > "$report/cluster-cleanup.txt" 2>&1
@@ -180,4 +182,17 @@ if [[ "${REAL_EVALUATION:-false}" == true ]]; then
     'import os,redis; r=redis.Redis.from_url(os.environ["REDIS_URL"]); keys=list(r.scan_iter(match="rahbar:cache:rahbar:*")); print("Removed initial warm answer cache keys:", r.unlink(*keys) if keys else 0)'
   python -u eval/run_eval.py --api "http://$ip" --host rahbar.local --timeout 300 \
     --out "$report/real-model-results.json" --checkpoint "$report/real-model-checkpoint.json"
+fi
+
+if [[ "${REAL_OPERATIONS:-false}" == true ]]; then
+  PYTHONPATH=. python -u scripts/check_real_operations.py --api "http://$ip" \
+    --context "$profile" --out "$report/real-runtime-operations.json"
+  # A distinct reference of the same source-built image exercises rollout mechanics.
+  docker tag rahbar-api:dev rahbar-api:acceptance-rollback
+  minikube -p "$profile" image load rahbar-api:acceptance-rollback
+  python -u scripts/operational_demo.py --context "$profile" --namespace rahbar \
+    --api "http://$ip" --host rahbar.local --question \
+    'What minimum CGPA avoids academic warning under the June 2026 rules?' \
+    --request-timeout 300 --image rahbar-api:acceptance-rollback \
+    --out "$report/real-rollout-rollback.json"
 fi
