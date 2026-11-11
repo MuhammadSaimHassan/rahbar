@@ -1,7 +1,7 @@
-NAME                    CPU(cores)   MEMORY(bytes)   
-api-948594c5d-jsnmc     53m          58Mi            
-api-948594c5d-kc6bt     53m          58Mi            
-api-948594c5d-xlwdf     54m          62Mi            
-chroma-0                16m          55Mi            
-redis-7b7bf7d99-cmqdz   12m          4Mi             
-ui-fcd4fdfdf-vjddt      1m           2Mi             
+NAME                    CPU(cores)   MEMORY(bytes)
+api-948594c5d-jsnmc     53m          58Mi
+api-948594c5d-kc6bt     53m          58Mi
+api-948594c5d-xlwdf     54m          62Mi
+chroma-0                16m          55Mi
+redis-7b7bf7d99-cmqdz   12m          4Mi
+ui-fcd4fdfdf-vjddt      1m           2Mi

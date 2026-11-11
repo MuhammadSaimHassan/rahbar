@@ -66,7 +66,7 @@ connection reset (curl 56), before cluster deployment. The probe now retries all
 transient startup errors within a bounded two-minute window. This is not a change
 to application inference timeouts or acceptance criteria.
 
-## Reviewed passing run — 2026-11-08
+## Reviewed passing run â€” 2026-11-08
 
 [Run 42498284513](https://github.com/MuhammadSaimHassan/rahbar/actions/runs/42498284513)
 passed on source head 9339fbd, tested merge checkout bee627163f591e438e8f9270abe279f5f0efae95.

@@ -62,3 +62,15 @@ for that prerequisite or explicitly use a stacked branch arrangement.
 
 CD still runs only on a push to main. Feature PR checks build and scan images but do
 not publish them or deploy a persistent real-corpus service.
+
+## Release after the final feature PRs
+
+Merge reviewed green feature PRs into dev in dependency order. Open dev into main
+after the final audit; main requires the six CI checks and a partner approval. A
+merge to main automatically starts the existing .github/workflows/cd.yml. Its test
+job gates build-push, which gates deploy. Do not manually push main or rename the
+workflow to trigger delivery. Verify all three jobs and the three full-SHA Docker
+tags. docs/FINAL-SUBMISSION.md lists the exact hand-in items.
+
+The latest previously verified release is 6683ba647b317586bb5400d8e3754a71fe8c41a2
+(run 42494652854). This is historical once a newer final release is selected.

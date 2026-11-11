@@ -1,0 +1,12 @@
+{
+  "checker_unchanged": true,
+  "checker_exit_code": 1,
+  "passed": 163,
+  "warnings": 4,
+  "failures": 2,
+  "failure_interpretation": "Two FROM runtime references are internal stages derived from pinned python:3.12.16-slim-bookworm.",
+  "manifest_formatting_semantically_identical": true,
+  "real_acceptance_run": 42498284513,
+  "real_model_run": 42499897552,
+  "complete_real_operations_run": 42502474968
+}

@@ -19,8 +19,7 @@ between different application versions. HPA bounds are temporarily fixed for the
 experiment and restored. Singleton Chroma replacement is a recovery/persistence
 test, not an assertion of zero downtime during that storage outage.
 
-Status: pending actual hosted run. Requires PR #7 and #8; merge in order, with six
-CI jobs and partner review. Preserve both real-runtime-operations.json and
+Run 42502474968 passed. Merge the approved green PRs in dependency order (#7, #8, #9). Preserve both real-runtime-operations.json and
 real-rollout-rollback.json from the artifact, then remove the heavy opt-in label.
 
 ## First run and metrics follow-up

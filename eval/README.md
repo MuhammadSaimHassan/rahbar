@@ -86,7 +86,7 @@ hits and one of six equivalent paraphrases reused. See PIPELINE.md and
 `golden.lock.json` records hashes for questions, cache tests, manifest and default
 projection, plus the input chunk hash. UTF-8 line endings are normalized for Windows,
 WSL and CI. The golden set was committed locally before tuning. The lock records that commit.
-Team review remains pending and GitHub setup is deferred.
+Team review remains required; GitHub CI/CD is configured. See docs/REAL-MODEL-EVALUATION.md for the revised hosted run.
 Explain and review any intentional oracle change before recording a replacement snapshot.
 
 The real query/evaluation run produced `results.json` and `baseline.json`. Keep these
