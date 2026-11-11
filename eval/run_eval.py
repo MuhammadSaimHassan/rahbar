@@ -104,6 +104,7 @@ def summarise(rows: list[dict]) -> dict:
             "valid_citations": valid, "citations": total,
             "abstention_correct": declined if row["must_abstain"] else None,
             "outcome": row.get("outcome"),
+            "cache": row.get("cache"),
             "seconds": row.get("seconds"),
             "question": row.get("question"),
             "answer_facts": row.get("answer_facts", []),
@@ -209,6 +210,7 @@ def evaluate(args: argparse.Namespace) -> dict:
                 "question": question["question"],
                 "answer_facts": question.get("answer_facts", []),
                 "outcome": reply.headers.get("X-Answer-Outcome"),
+                "cache": reply.headers.get("X-Cache"),
                 "response": response,
                 "seconds": round(time.perf_counter() - started, 2),
             })
